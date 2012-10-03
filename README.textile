@@ -14,7 +14,7 @@ Debido a la complejidad de los planes de numeración y a que el número de regis
 
 Ninguno de los datos almacenados en el terminal o presentados por la aplicación son almacenados fuera del propio terminal, y la aplicación no realiza ningún tipo de conexión a internet (únicamente puede lanzar el navegador del propio terminal a petición del usuario). Tampoco se envía información a través de ningún otro medio.
 
-p=."!http://developer.android.com/images/brand/en_app_rgb_wo_60.png(Android app on Google Play)!":http://play.google.com/store/apps/details?id=es.simyo.encogetufactura
+"!http://developer.android.com/images/brand/en_app_rgb_wo_60.png(Android app on Google Play)!":http://play.google.com/store/apps/details?id=es.simyo.encogetufactura
 
 h2. Información de compilación
 
