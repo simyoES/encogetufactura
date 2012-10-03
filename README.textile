@@ -18,6 +18,6 @@ Ninguno de los datos almacenados en el terminal o presentados por la aplicación
 
 h2. Información de compilación
 
-* En "Eclipse":http://eclipse.org/, añade el proyecto "ActionBarSherlock":http://actionbarsherlock.com/ y establécelo como librería
+* En "Eclipse":http://eclipse.org/, añade el proyecto "ActionBarSherlock":http://actionbarsherlock.com/ y establécelo como librería.
 * Descarga el proyecto Encoge tu Factura con el comando <pre>git clone git@github:/simyoES/encogetufactura</pre>
-* Importa el proyecto Encoge tu Factura en "Eclipse":http://eclipse.org/ e indica que quieres compilar con Android 4.0, JDK1.6 y que use la librería ActionBarSherlock
+* Importa el proyecto Encoge tu Factura en "Eclipse":http://eclipse.org/ e indica que quieres compilar con Android 4.0, JDK1.6 y que use la librería ActionBarSherlock.
