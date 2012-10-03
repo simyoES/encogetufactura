@@ -16,7 +16,7 @@ Ninguno de los datos almacenados en el terminal o presentados por la aplicación
 
 "!http://developer.android.com/images/brand/en_app_rgb_wo_60.png(Android app on Google Play)!":http://play.google.com/store/apps/details?id=es.simyo.encogetufactura
 
-h2. Información de compilación
+h2. Información de importación para editar el proyecto
 
 * En "Eclipse":http://eclipse.org/, añade el proyecto "ActionBarSherlock":http://actionbarsherlock.com/ y establécelo como librería.
 * Descarga el proyecto Encoge tu Factura con el comando <pre>git clone git@github:/simyoES/encogetufactura</pre>
