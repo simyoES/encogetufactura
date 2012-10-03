@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:padding="5dp">
+
+	<LinearLayout android:id="@+id/planinfo_detail_title"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+    
+		<TextView android:id="@+id/planinfo_detail_planname"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text=""
+		    android:textSize="17sp"
+		    android:textStyle="bold"
+		    android:textColor="@android:color/black"/>
+	
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="2dp"
+	        android:background="#f58a2d"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"/>
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/planinfo_detail_buttons"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true">
+    
+	    <Button android:id="@+id/planinfo_detail_call"
+	        	style="@style/customButton"
+	            android:background="@drawable/gradient_orange"
+	            android:text="@string/planinfo_detail_call"
+	            android:drawableLeft="@drawable/ic_device_access_call"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"/>
+	
+	    <Button android:id="@+id/planinfo_detail_web"
+	        	style="@style/customButton"
+	            android:background="@drawable/gradient_orange"
+	            android:text="@string/planinfo_detail_web"
+	            android:drawableLeft="@drawable/ic_location_web_site"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"/>
+
+	</LinearLayout>
+	
+    <WebView android:id="@+id/planinfo_detail_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/planinfo_detail_buttons"
+        android:layout_below="@id/planinfo_detail_title"/>
+    
+	
+</RelativeLayout>

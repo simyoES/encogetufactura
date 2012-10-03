@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <Button
+        android:id="@+id/disclaimer_ok_button"
+        style="@style/customButton"
+        android:background="@drawable/gradient_orange"
+        android:text="@string/disclaimer_ok_button"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    
+    <ScrollView
+        android:id="@+id/terms_and_conditions_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/disclaimer_ok_button">
+
+        <WebView
+            android:id="@+id/terms_and_conditions_text"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+
+    </ScrollView>
+    
+    <ListView android:id="@id/android:list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+</RelativeLayout>

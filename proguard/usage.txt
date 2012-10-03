@@ -1,0 +1,645 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatIcs
+android.support.v4.content.AsyncTaskLoader
+android.support.v4.content.AsyncTaskLoader$LoadTask
+android.support.v4.content.CursorLoader
+android.support.v4.content.IntentCompat
+android.support.v4.content.Loader:
+    android.content.Context mContext
+    90:92:public Loader(android.content.Context)
+    102:105:public void deliverResult(java.lang.Object)
+    111:111:public android.content.Context getContext()
+    118:118:public int getId()
+    157:157:public boolean isStarted()
+    166:166:public boolean isAbandoned()
+    175:175:public boolean isReset()
+    217:218:public void forceLoad()
+    225:225:protected void onForceLoad()
+    312:314:public boolean takeContentChanged()
+    326:334:public void onContentChanged()
+android.support.v4.content.Loader$ForceLoadContentObserver
+android.support.v4.content.Loader$OnLoadCompleteListener:
+    public abstract void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.content.LocalBroadcastManager
+android.support.v4.content.LocalBroadcastManager$1
+android.support.v4.content.LocalBroadcastManager$BroadcastRecord
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord
+android.support.v4.content.ModernAsyncTask
+android.support.v4.content.ModernAsyncTask$1
+android.support.v4.content.ModernAsyncTask$2
+android.support.v4.content.ModernAsyncTask$3
+android.support.v4.content.ModernAsyncTask$4
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult
+android.support.v4.content.ModernAsyncTask$InternalHandler
+android.support.v4.content.ModernAsyncTask$Status
+android.support.v4.content.ModernAsyncTask$WorkerRunnable
+android.support.v4.content.pm.ActivityInfoCompat
+android.support.v4.database.DatabaseUtilsCompat
+android.support.v4.os.ParcelableCompat:
+    26:42:public ParcelableCompat()
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub:
+    22:22:ParcelableCompatCreatorHoneycombMR2Stub()
+android.support.v4.util.DebugUtils:
+    25:25:public DebugUtils()
+android.support.v4.util.LruCache
+android.support.v4.util.TimeUtils
+android.support.v4.view.AccessibilityDelegateCompat
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl
+android.support.v4.view.AccessibilityDelegateCompatIcs
+android.support.v4.view.AccessibilityDelegateCompatIcs$1
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge
+android.support.v4.view.KeyEventCompat:
+    25:95:public KeyEventCompat()
+    127:127:public static int normalizeMetaState(int)
+    131:131:public static boolean metaStateHasModifiers(int,int)
+    135:135:public static boolean metaStateHasNoModifiers(int)
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl:
+    private static final int META_MODIFIER_MASK
+    private static final int META_ALL_MASK
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl:
+    98:98:public int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl:
+    public abstract int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompatHoneycomb:
+    24:24:KeyEventCompatHoneycomb()
+    26:26:public static int normalizeMetaState(int)
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompat
+android.support.v4.view.MenuItemCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuItemCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuItemCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompatHoneycomb
+android.support.v4.view.MotionEventCompat:
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_HOVER_MOVE
+    public static final int ACTION_SCROLL
+    public static final int ACTION_POINTER_INDEX_MASK
+    public static final int ACTION_POINTER_INDEX_SHIFT
+    25:75:public MotionEventCompat()
+    148:148:public static int getActionMasked(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompatEclair:
+    24:24:MotionEventCompatEclair()
+android.support.v4.view.PagerTitleStrip:
+    private static final java.lang.String TAG
+    private static final int SIDE_ALPHA
+    private static final int TEXT_SPACING
+    67:68:public PagerTitleStrip(android.content.Context)
+android.support.v4.view.VelocityTrackerCompat:
+    25:51:public VelocityTrackerCompat()
+    91:91:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl:
+    44:44:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl:
+    58:58:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl:
+    public abstract float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompatHoneycomb:
+    24:24:VelocityTrackerCompatHoneycomb()
+    29:29:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.ViewCompat:
+    public static final int OVER_SCROLL_ALWAYS
+    public static final int OVER_SCROLL_IF_CONTENT_SCROLLS
+    public static final int OVER_SCROLL_NEVER
+    28:95:public ViewCompat()
+    153:153:public static boolean canScrollVertically(android.view.View,int)
+    182:183:public static void setOverScrollMode(android.view.View,int)
+    219:220:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    252:253:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    288:289:public static void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    303:304:public static void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$BaseViewCompatImpl:
+    62:62:public boolean canScrollVertically(android.view.View,int)
+    69:69:public void setOverScrollMode(android.view.View,int)
+    72:72:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    75:75:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    78:78:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    81:81:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+android.support.v4.view.ViewCompat$GBViewCompatImpl:
+    91:92:public void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompat$ICSViewCompatImpl:
+    102:102:public boolean canScrollVertically(android.view.View,int)
+    106:107:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    110:111:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    114:115:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    118:119:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$ViewCompatImpl:
+    public abstract boolean canScrollVertically(android.view.View,int)
+    public abstract void setOverScrollMode(android.view.View,int)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompatGingerbread:
+    21:21:ViewCompatGingerbread()
+    27:28:public static void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompatICS:
+    27:27:ViewCompatICS()
+    34:34:public static boolean canScrollVertically(android.view.View,int)
+    38:39:public static void setAccessibilityDelegate(android.view.View,java.lang.Object)
+    42:43:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    46:47:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    50:51:public static void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+android.support.v4.view.ViewConfigurationCompat:
+    25:46:public ViewConfigurationCompat()
+android.support.v4.view.ViewConfigurationCompatFroyo:
+    24:24:ViewConfigurationCompatFroyo()
+android.support.v4.view.ViewGroupCompat
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatIcsImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatStubImpl
+android.support.v4.view.ViewGroupCompatIcs
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int INVALID_POINTER
+    private long mFakeDragBeginTime
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    271:273:public ViewPager(android.content.Context)
+    596:597:void smoothScrollTo(int,int)
+    1652:1668:public boolean beginFakeDrag()
+    1678:1697:public void endFakeDrag()
+    1707:1735:public void fakeDragBy(float)
+    1747:1747:public boolean isFakeDragging()
+android.support.v4.view.ViewPager$SimpleOnPageChangeListener
+android.support.v4.view.accessibility.AccessibilityEventCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventIcsImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventStubImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventVersionImpl
+android.support.v4.view.accessibility.AccessibilityEventCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerStubImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerVersionImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$1
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatIcs
+android.support.v4.view.accessibility.AccessibilityRecordCompat
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordStubImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
+android.support.v4.widget.CursorAdapter
+android.support.v4.widget.CursorAdapter$1
+android.support.v4.widget.CursorAdapter$ChangeObserver
+android.support.v4.widget.CursorAdapter$MyDataSetObserver
+android.support.v4.widget.CursorFilter
+android.support.v4.widget.CursorFilter$CursorFilterClient
+android.support.v4.widget.EdgeEffectCompat:
+    204:204:public boolean onAbsorb(int)
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl:
+    82:82:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl:
+    116:116:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl:
+    public abstract boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompatIcs:
+    28:28:EdgeEffectCompatIcs()
+    57:58:public static boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.ResourceCursorAdapter
+android.support.v4.widget.SearchViewCompat
+android.support.v4.widget.SearchViewCompat$OnQueryTextListenerCompat
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$1
+android.support.v4.widget.SearchViewCompat$SearchViewCompatImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatStubImpl
+android.support.v4.widget.SearchViewCompatHoneycomb
+android.support.v4.widget.SearchViewCompatHoneycomb$1
+android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge
+android.support.v4.widget.SimpleCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder
+com.conzebit.myplan.android.store.AndroidMsisdnTypeStore:
+    private static final java.lang.String MSISDN_PREFERENCE
+    60:69:private void store()
+    76:78:public void setMsisdnType(java.lang.String,com.conzebit.myplan.core.msisdn.MsisdnType)
+com.conzebit.myplan.android.store.CallLogStore:
+    38:38:CallLogStore()
+    143:197:public static com.conzebit.myplan.core.call.Call getLastCall(android.content.Context)
+com.conzebit.myplan.android.store.ContactStore:
+    27:27:public ContactStore()
+com.conzebit.myplan.android.store.CountryStore:
+    44:44:public java.lang.String getCountryForDate(long,java.lang.String)
+com.conzebit.myplan.android.store.LogStoreService:
+    31:31:public LogStoreService()
+    54:54:public static java.util.ArrayList getSms(android.content.Context,java.util.Date,java.util.Date)
+    58:58:public static com.conzebit.myplan.core.call.Call getLastCall(android.content.Context)
+com.conzebit.myplan.android.store.LogStoreServiceTest:
+    29:29:public LogStoreServiceTest()
+com.conzebit.myplan.android.store.MyPlanDBHelper:
+    private static final java.lang.String LOG_TAG
+    private static final java.lang.String DATABASE_NAME
+    private static final int DATABASE_VERSION
+    private static final java.lang.String COUNTRY_TABLE_CREATE
+    private static final java.lang.String COUNTRY_INDEX_CREATE
+    private static final java.lang.String COUNTRY_SELECT_LAST
+    private static final java.lang.String COUNTRY_SELECT_DATE_FROM
+    private static final java.lang.String COUNTRY_SELECT_DATE_TO
+    private static final java.lang.String COUNTRY_INSERT
+    private static final java.lang.String GPRS_TABLE_CREATE
+    private static final java.lang.String GPRS_INDEX_CREATE
+    private static final java.lang.String GPRS_INSERT
+    private static final java.lang.String GPRS_SELECT_BETWEEN
+    private static final java.lang.String GPRS_SELECT_LAST
+    private static final long GPRS_MIN_DIFF
+    private static final java.lang.String GPRS_SELECT_ALL
+    112:127:public java.lang.String getCountryForDate(long,java.lang.String)
+com.conzebit.myplan.android.store.MyPlanDBHelper$DataInterval
+com.conzebit.myplan.android.store.SMSLogStore:
+    public static final int MESSAGE_TYPE_INBOX
+    public static final int MESSAGE_TYPE_SENT
+    38:38:SMSLogStore()
+com.conzebit.myplan.android.store.data.DataStore:
+    private static final java.lang.String LOG_TAG
+com.conzebit.myplan.android.store.data.DebugDevice
+com.conzebit.myplan.android.store.data.Device:
+    protected abstract java.lang.String getCell()
+    protected abstract java.lang.String getWiFi()
+    public abstract long getWiFiRxBytes()
+    public abstract long getWiFiTxBytes()
+    99:109:public final synchronized java.lang.String[] getInterfaces()
+com.conzebit.myplan.android.store.data.DiscoverableDevice:
+    155:163:protected java.lang.String getWiFi()
+    195:199:public long getWiFiRxBytes()
+    207:211:public long getWiFiTxBytes()
+com.conzebit.myplan.android.store.data.EmulatorDevice:
+    238:238:protected java.lang.String getWiFi()
+    270:274:public long getWiFiRxBytes()
+    282:286:public long getWiFiTxBytes()
+com.conzebit.myplan.android.store.data.FroyoDevice:
+    394:394:protected java.lang.String getCell()
+    426:426:protected java.lang.String getWiFi()
+    434:439:public long getWiFiRxBytes()
+    447:452:public long getWiFiTxBytes()
+com.conzebit.myplan.android.store.data.SysClassNet:
+    private static final java.lang.String LOG_TAG
+    public static final java.lang.String SYS_CLASS_NET
+    public static final java.lang.String TYPE
+    public static final java.lang.String CARRIER
+    public static final java.lang.String RX_BYTES
+    public static final java.lang.String TX_BYTES
+    48:49:private SysClassNet()
+    57:59:public static boolean isUp(java.lang.String)
+com.conzebit.myplan.android.util.AndroidResourcesUtil:
+    22:22:public AndroidResourcesUtil()
+    41:41:public static int getOperatorResourceImage(java.lang.String)
+com.conzebit.myplan.android.util.Settings:
+    26:26:public Settings()
+com.conzebit.myplan.core.Chargeable:
+    public static final int CHARGEABLE_TYPE_CALL
+    public static final int CHARGEABLE_TYPE_SMS
+    public static final int CHARGEABLE_TYPE_MESSAGE
+    public static final int CHARGEABLE_TYPE_DATARXTX
+com.conzebit.myplan.core.call.Call:
+    public static final int CALL_TYPE_RECEIVED
+    public static final int CALL_TYPE_RECEIVED_MISSED
+    public static final int CALL_TYPE_SENT
+    public static final int CALL_TYPE_SENT_MISSED
+com.conzebit.myplan.core.contact.Contact:
+    68:68:public java.lang.String getNSN()
+    72:73:public void setMsisdnType(com.conzebit.myplan.core.msisdn.MsisdnType)
+com.conzebit.myplan.core.message.ChargeableMessage:
+    public static final java.lang.String MESSAGE_MONTH_FEE
+    public static final java.lang.String MESSAGE_MINIMUM_MONTH_FEE
+    public static final java.lang.String MESSAGE_REGISTERED_CALLS_SMS
+com.conzebit.myplan.core.msisdn.IMsisdnTypeStore:
+    public abstract void setMsisdnType(java.lang.String,com.conzebit.myplan.core.msisdn.MsisdnType)
+com.conzebit.myplan.core.msisdn.MsisdnType:
+    62:62:public static java.lang.String[] getNames()
+    66:66:public boolean isMobile()
+com.conzebit.myplan.core.msisdn.MsisdnTypeService:
+    50:51:public void setMsisdnType(java.lang.String,com.conzebit.myplan.core.msisdn.MsisdnType)
+com.conzebit.myplan.core.plan.AbstractPlan:
+    public abstract java.lang.String getCountryISO()
+    public abstract java.lang.String getCountry()
+    public abstract java.lang.String getPlanURL()
+    public abstract boolean hasInternetFee()
+com.conzebit.myplan.core.plan.PlanChargeable:
+    57:57:public com.conzebit.myplan.core.plan.PlanChargeable$Type getType()
+com.conzebit.myplan.core.plan.PlanConfig:
+    27:29:public PlanConfig()
+    32:33:public void addPlanConfigElement(com.conzebit.myplan.core.plan.PlanConfigElement)
+    36:36:public com.conzebit.myplan.core.plan.PlanConfigElement getPlanConfigElement(java.lang.String)
+    40:40:public java.util.Collection getPlanConfigElements()
+com.conzebit.myplan.core.plan.PlanConfigElement:
+    private java.lang.Object minValue
+    private java.lang.Object maxValue
+    private java.lang.Class clazz
+    27:33:public PlanConfigElement(java.lang.String,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Class)
+    40:40:public java.lang.Object getValue()
+    48:48:public java.lang.Object getMinValue()
+    52:52:public java.lang.Object getMaxValue()
+    56:56:public java.lang.String getTName()
+com.conzebit.myplan.core.plan.PlanImpl:
+    35:35:public java.lang.String getCountryISO()
+    39:39:public java.lang.String getCountry()
+    59:59:public java.lang.String getPlanURL()
+    71:71:public boolean hasInternetFee()
+com.conzebit.myplan.core.plan.PlanService:
+    69:75:public com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList,java.lang.String,java.lang.String)
+    80:91:public void updateMisdnTypeAndProcess(java.lang.String,com.conzebit.myplan.core.msisdn.MsisdnType)
+    115:120:public java.lang.String[] getOperatorsAsStringArray()
+    145:150:public com.conzebit.myplan.core.plan.PlanConfig getPlanConfig(java.lang.String,java.lang.String)
+    163:163:public java.util.ArrayList getPlans()
+    167:171:public java.lang.String[] getPlansAsStringArray()
+    175:186:public java.lang.String[] getPlansAsStringArray(java.lang.String)
+com.conzebit.myplan.core.sms.Sms:
+    public static final int SMS_TYPE_SENT
+    public static final int SMS_TYPE_RECEIVED
+com.conzebit.myplan.ext.es.ESMsisdnTypeValidator:
+    private static final java.lang.String COUNTRY_CODE
+com.conzebit.myplan.ext.es.ESPlan:
+    29:29:public java.lang.String getCountry()
+    45:45:public boolean hasInternetFee()
+com.conzebit.util.AndroidUtils:
+    private static final java.lang.String TAG
+    29:29:public AndroidUtils()
+    38:45:public static java.lang.String getAppVersionCode(android.content.Context)
+    60:69:public static java.lang.String getAppFullVersion(android.content.Context)
+    73:75:public static void forceHideKeyboard(android.content.Context,android.os.IBinder)
+    78:83:public static java.lang.String getIMEI(android.content.Context)
+    119:128:public static boolean showMap(android.content.Context,java.lang.String)
+    132:135:public static void installRemoteAPK(android.content.Context,java.lang.String)
+com.conzebit.util.Formatter:
+    24:24:public Formatter()
+    38:38:public static java.lang.String formatDate(java.util.Calendar)
+    46:46:public static java.lang.String formatFullDate(java.util.Date)
+    54:54:public static java.lang.String formatMonthTextDate(java.util.Calendar)
+    58:58:public static java.lang.String formatMonthTextDate(java.util.Date)
+    62:62:public static java.lang.String formatFullMonthTextDate(java.util.Date)
+    66:66:public static java.lang.String formatFullMonthTextDate(java.util.Calendar)
+    70:70:public static java.lang.String formatDateMonthYear(java.util.Date)
+    114:118:public static java.lang.String formatBytesToKbMbGbTb(long)
+com.conzebit.util.MathUtils
+com.conzebit.util.MsisdnUtil:
+    22:22:public MsisdnUtil()
+com.conzebit.util.StringUtil:
+    19:19:public StringUtil()
+    39:42:public static java.lang.String trim(java.lang.String)
+    47:50:public static java.lang.String toLowerCase(java.lang.String)
+    55:65:public static boolean equals(java.lang.CharSequence,java.lang.CharSequence)
+com.google.i18n.phonenumbers.AlternateFormatsCountryCodeSet
+com.google.i18n.phonenumbers.AsYouTypeFormatter
+com.google.i18n.phonenumbers.CountryCodeToRegionCodeMap:
+    public CountryCodeToRegionCodeMap()
+com.google.i18n.phonenumbers.MetadataManager
+com.google.i18n.phonenumbers.PhoneNumberMatch
+com.google.i18n.phonenumbers.PhoneNumberMatcher
+com.google.i18n.phonenumbers.PhoneNumberMatcher$NumberGroupingChecker
+com.google.i18n.phonenumbers.PhoneNumberMatcher$State
+com.google.i18n.phonenumbers.PhoneNumberUtil:
+    static final int REGEX_FLAGS
+    private static final int MIN_LENGTH_FOR_NSN
+    static final int MAX_LENGTH_FOR_NSN
+    static final int MAX_LENGTH_COUNTRY_CODE
+    private static final int MAX_INPUT_STRING_LENGTH
+    static final java.lang.String META_DATA_FILE_PREFIX
+    private static final java.lang.String UNKNOWN_REGION
+    private static final int NANPA_COUNTRY_CODE
+    private static final java.lang.String COLOMBIA_MOBILE_TO_FIXED_LINE_PREFIX
+    static final char PLUS_SIGN
+    private static final char STAR_SIGN
+    private static final java.lang.String RFC3966_EXTN_PREFIX
+    private static final java.lang.String RFC3966_PREFIX
+    private static final java.lang.String RFC3966_PHONE_CONTEXT
+    private static final java.lang.String RFC3966_ISDN_SUBADDRESS
+    static final java.lang.String VALID_PUNCTUATION
+    private static final java.lang.String DIGITS
+    static final java.lang.String PLUS_CHARS
+    private static final java.lang.String VALID_START_CHAR
+    private static final java.lang.String SECOND_NUMBER_START
+    private static final java.lang.String UNWANTED_END_CHARS
+    private static final java.lang.String DEFAULT_EXTN_PREFIX
+    private static final java.lang.String CAPTURING_EXTN_DIGITS
+    public static final java.lang.String REGION_CODE_FOR_NON_GEO_ENTITY
+    public static java.lang.String convertAlphaCharactersInNumber(java.lang.String)
+    public int getLengthOfGeographicalAreaCode(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public int getLengthOfNationalDestinationCode(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    static synchronized void resetInstance()
+    public java.util.Set getSupportedRegions()
+    public java.util.Set getSupportedGlobalNetworkCallingCodes()
+    private boolean hasValidCountryCallingCode(int)
+    public java.lang.String format(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat)
+    public void format(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat,java.lang.StringBuilder)
+    public java.lang.String formatByPattern(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat,java.util.List)
+    public java.lang.String formatNationalNumberWithCarrierCode(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,java.lang.String)
+    public java.lang.String formatNationalNumberWithPreferredCarrierCode(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,java.lang.String)
+    public java.lang.String formatNumberForMobileDialing(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,java.lang.String,boolean)
+    public java.lang.String formatOutOfCountryCallingNumber(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,java.lang.String)
+    public java.lang.String formatInOriginalFormat(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,java.lang.String)
+    private boolean rawInputContainsNationalPrefix(java.lang.String,java.lang.String,java.lang.String)
+    private boolean hasUnexpectedItalianLeadingZero(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    private boolean hasFormattingPatternForNumber(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public java.lang.String formatOutOfCountryKeepingAlphaChars(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,java.lang.String)
+    private void prefixNumberWithCountryCallingCode(int,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat,java.lang.StringBuilder)
+    private java.lang.String formatNsn(java.lang.String,com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat)
+    private java.lang.String formatNsn(java.lang.String,com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat,java.lang.String)
+    com.google.i18n.phonenumbers.Phonemetadata$NumberFormat chooseFormattingPatternForNumber(java.util.List,java.lang.String)
+    java.lang.String formatNsnUsingPattern(java.lang.String,com.google.i18n.phonenumbers.Phonemetadata$NumberFormat,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat)
+    private java.lang.String formatNsnUsingPattern(java.lang.String,com.google.i18n.phonenumbers.Phonemetadata$NumberFormat,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat,java.lang.String)
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber getExampleNumber(java.lang.String)
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber getExampleNumberForType(java.lang.String,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberType)
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber getExampleNumberForNonGeoEntity(int)
+    private void maybeAppendFormattedExtension(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat,java.lang.StringBuilder)
+    com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc getNumberDescByType(com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata,com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberType)
+    public com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberType getNumberType(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public boolean isValidNumber(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public boolean isValidNumberForRegion(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,java.lang.String)
+    public int getCountryCodeForRegion(java.lang.String)
+    private int getCountryCodeForValidRegion(java.lang.String)
+    public java.lang.String getNddPrefixForRegion(java.lang.String,boolean)
+    public boolean isNANPACountry(java.lang.String)
+    boolean isLeadingZeroPossible(int)
+    public boolean isAlphaNumber(java.lang.String)
+    public boolean isPossibleNumber(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public com.google.i18n.phonenumbers.PhoneNumberUtil$ValidationResult isPossibleNumberWithReason(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public boolean isPossibleNumber(java.lang.String,java.lang.String)
+    public boolean truncateTooLongNumber(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public com.google.i18n.phonenumbers.AsYouTypeFormatter getAsYouTypeFormatter(java.lang.String)
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber parseAndKeepRawInput(java.lang.String,java.lang.String)
+    public void parseAndKeepRawInput(java.lang.String,java.lang.String,com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public java.lang.Iterable findNumbers(java.lang.CharSequence,java.lang.String)
+    public java.lang.Iterable findNumbers(java.lang.CharSequence,java.lang.String,com.google.i18n.phonenumbers.PhoneNumberUtil$Leniency,long)
+    public com.google.i18n.phonenumbers.PhoneNumberUtil$MatchType isNumberMatch(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    private boolean isNationalNumberSuffixOfTheOther(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+    public com.google.i18n.phonenumbers.PhoneNumberUtil$MatchType isNumberMatch(java.lang.String,java.lang.String)
+    public com.google.i18n.phonenumbers.PhoneNumberUtil$MatchType isNumberMatch(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber,java.lang.String)
+    boolean canBeInternationallyDialled(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+com.google.i18n.phonenumbers.PhoneNumberUtil$1
+com.google.i18n.phonenumbers.PhoneNumberUtil$2
+com.google.i18n.phonenumbers.PhoneNumberUtil$Leniency
+com.google.i18n.phonenumbers.PhoneNumberUtil$Leniency$1
+com.google.i18n.phonenumbers.PhoneNumberUtil$Leniency$2
+com.google.i18n.phonenumbers.PhoneNumberUtil$Leniency$3
+com.google.i18n.phonenumbers.PhoneNumberUtil$Leniency$3$1
+com.google.i18n.phonenumbers.PhoneNumberUtil$Leniency$4
+com.google.i18n.phonenumbers.PhoneNumberUtil$Leniency$4$1
+com.google.i18n.phonenumbers.PhoneNumberUtil$MatchType
+com.google.i18n.phonenumbers.PhoneNumberUtil$PhoneNumberFormat
+com.google.i18n.phonenumbers.Phonemetadata:
+    private Phonemetadata()
+com.google.i18n.phonenumbers.Phonemetadata$NumberFormat:
+    private static final long serialVersionUID
+    public static com.google.i18n.phonenumbers.Phonemetadata$NumberFormat$Builder newBuilder()
+    public boolean hasPattern()
+    public java.lang.String getPattern()
+    public boolean hasFormat()
+    public java.lang.String getFormat()
+    public java.util.List leadingDigitPatterns()
+    public java.lang.String getLeadingDigitsPattern(int)
+    public com.google.i18n.phonenumbers.Phonemetadata$NumberFormat addLeadingDigitsPattern(java.lang.String)
+    public boolean hasNationalPrefixFormattingRule()
+    public java.lang.String getNationalPrefixFormattingRule()
+    public com.google.i18n.phonenumbers.Phonemetadata$NumberFormat clearNationalPrefixFormattingRule()
+    public boolean hasNationalPrefixOptionalWhenFormatting()
+    public boolean isNationalPrefixOptionalWhenFormatting()
+    public boolean hasDomesticCarrierCodeFormattingRule()
+    public java.lang.String getDomesticCarrierCodeFormattingRule()
+    public com.google.i18n.phonenumbers.Phonemetadata$NumberFormat mergeFrom(com.google.i18n.phonenumbers.Phonemetadata$NumberFormat)
+com.google.i18n.phonenumbers.Phonemetadata$NumberFormat$Builder
+com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata:
+    private static final long serialVersionUID
+    public static com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata$Builder newBuilder()
+    public boolean hasGeneralDesc()
+    public boolean hasFixedLine()
+    public boolean hasMobile()
+    public boolean hasTollFree()
+    public boolean hasPremiumRate()
+    public boolean hasSharedCost()
+    public boolean hasPersonalNumber()
+    public boolean hasVoip()
+    public boolean hasPager()
+    public boolean hasUan()
+    public boolean hasVoicemail()
+    public boolean hasEmergency()
+    public com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc getEmergency()
+    public boolean hasNoInternationalDialling()
+    public com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc getNoInternationalDialling()
+    public boolean hasId()
+    public java.lang.String getId()
+    public boolean hasCountryCode()
+    public boolean hasInternationalPrefix()
+    public boolean hasPreferredInternationalPrefix()
+    public java.lang.String getPreferredInternationalPrefix()
+    public boolean hasNationalPrefix()
+    public java.lang.String getNationalPrefix()
+    public boolean hasPreferredExtnPrefix()
+    public java.lang.String getPreferredExtnPrefix()
+    public boolean hasNationalPrefixForParsing()
+    public boolean hasNationalPrefixTransformRule()
+    public boolean hasSameMobileAndFixedLinePattern()
+    public java.util.List numberFormats()
+    public com.google.i18n.phonenumbers.Phonemetadata$NumberFormat getNumberFormat(int)
+    public com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata addNumberFormat(com.google.i18n.phonenumbers.Phonemetadata$NumberFormat)
+    public java.util.List intlNumberFormats()
+    public com.google.i18n.phonenumbers.Phonemetadata$NumberFormat getIntlNumberFormat(int)
+    public com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata addIntlNumberFormat(com.google.i18n.phonenumbers.Phonemetadata$NumberFormat)
+    public com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata clearIntlNumberFormat()
+    public boolean hasMainCountryForCode()
+    public boolean isMainCountryForCode()
+    public boolean getMainCountryForCode()
+    public boolean hasLeadingZeroPossible()
+    public boolean isLeadingZeroPossible()
+com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata$Builder
+com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection:
+    private static final long serialVersionUID
+    public static com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection$Builder newBuilder()
+    public com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection addMetadata(com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadata)
+    public com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection clear()
+com.google.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection$Builder
+com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc:
+    private static final long serialVersionUID
+    public static com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc$Builder newBuilder()
+    public boolean hasPossibleNumberPattern()
+    public boolean hasExampleNumber()
+    public java.lang.String getExampleNumber()
+    public com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc mergeFrom(com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc)
+    public boolean exactlySameAs(com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc)
+com.google.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc$Builder
+com.google.i18n.phonenumbers.Phonenumber:
+    private Phonenumber()
+com.google.i18n.phonenumbers.Phonenumber$PhoneNumber:
+    private static final long serialVersionUID
+    public boolean hasCountryCode()
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber clearCountryCode()
+    public boolean hasNationalNumber()
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber clearNationalNumber()
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber clearExtension()
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber clearItalianLeadingZero()
+    public boolean hasRawInput()
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber clearRawInput()
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber clearPreferredDomesticCarrierCode()
+    public final com.google.i18n.phonenumbers.Phonenumber$PhoneNumber clear()
+    public com.google.i18n.phonenumbers.Phonenumber$PhoneNumber mergeFrom(com.google.i18n.phonenumbers.Phonenumber$PhoneNumber)
+com.google.i18n.phonenumbers.RegexCache:
+    boolean containsRegex(java.lang.String)
+com.google.i18n.phonenumbers.RegexCache$LRUCache:
+    public synchronized boolean containsKey(java.lang.Object)
+com.google.i18n.phonenumbers.RegionCode
+com.google.i18n.phonenumbers.ShortNumberUtil
+es.simyo.encogetufactura.BuildConfig
+es.simyo.encogetufactura.EncogeTuFacturaApp:
+    public static final java.lang.String DEFAULT_COUNTRY
+    public static final java.lang.String CALL_NUMBER
+    56:56:public com.conzebit.myplan.core.msisdn.MsisdnTypeService getMsisdnTypeService()
+es.simyo.encogetufactura.R
+es.simyo.encogetufactura.R$attr
+es.simyo.encogetufactura.R$bool
+es.simyo.encogetufactura.R$color
+es.simyo.encogetufactura.R$dimen
+es.simyo.encogetufactura.R$drawable
+es.simyo.encogetufactura.R$id
+es.simyo.encogetufactura.R$integer
+es.simyo.encogetufactura.R$layout
+es.simyo.encogetufactura.R$menu
+es.simyo.encogetufactura.R$string
+es.simyo.encogetufactura.R$style
+es.simyo.encogetufactura.R$styleable
+es.simyo.encogetufactura.activity.PlanHelper:
+    31:31:public PlanHelper()
+es.simyo.encogetufactura.activity.StatisticsHelper:
+    37:37:public StatisticsHelper()
+es.simyo.encogetufactura.plan.ESSimyo:
+    private static final double INTERNATIONAL_INITIAL_PRICE
+    private static final double INTERNATIONAL_PRICE_PER_SECOND
+    private static final double INTERNATIONAL_PRICE_PER_SECOND_CU_KP_SO
+    private static final double INTERNATIONAL_SMS_PRICE
+    private static final double DATARXTX_KB_EXPRA_PRICE
+es.simyo.encogetufactura.plan.ESSimyo0y6centimos:
+    52:52:public java.lang.String getPlanURL()
+es.simyo.encogetufactura.plan.ESSimyo0y8centimos
+es.simyo.encogetufactura.plan.ESSimyo3centimos:
+    51:51:public java.lang.String getPlanURL()
+es.simyo.encogetufactura.plan.ESSimyo5centimos:
+    51:51:public java.lang.String getPlanURL()
+es.simyo.encogetufactura.plan.ESSimyoGigaplan:
+    56:56:public java.lang.String getPlanURL()
+es.simyo.encogetufactura.receiver.NetworkReceiver:
+    private static final long SHORT_DELAY
+    private static final long LONG_DELAY
+    private static final java.lang.String SHEDULED

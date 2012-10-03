@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:padding="5dp">
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f58a2d"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button android:id="@+id/planinfo_gigaplan"
+        	style="@style/customButtonWhite"
+            android:background="@drawable/gradient_gray"
+            android:text="@string/planinfo_gigaplan"
+            android:textColor="@android:color/black"
+            android:drawableRight="@drawable/ic_navigation_next_item_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/planinfo_5cents"
+        	style="@style/customButtonWhite"
+            android:background="@drawable/gradient_gray"
+            android:text="@string/planinfo_5cents"
+            android:textColor="@android:color/black"
+            android:drawableRight="@drawable/ic_navigation_next_item_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    
+    <Button android:id="@+id/planinfo_3cents"
+        	style="@style/customButtonWhite"
+            android:background="@drawable/gradient_gray"
+            android:text="@string/planinfo_3cents"
+            android:textColor="@android:color/black"
+            android:drawableRight="@drawable/ic_navigation_next_item_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    
+    <Button android:id="@+id/planinfo_0_6cents"
+        	style="@style/customButtonWhite"
+            android:background="@drawable/gradient_gray"
+            android:text="@string/planinfo_0_6cents"
+            android:textColor="@android:color/black"
+            android:drawableRight="@drawable/ic_navigation_next_item_black"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f58a2d"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Síguenos en"
+	    android:textSize="17sp"
+	    android:textStyle="bold"
+	    android:gravity="center"
+	    android:textColor="@android:color/black"
+	    android:layout_marginBottom="5dp"/>
+    
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center">
+	    
+	    	<ImageView android:id="@+id/planinfo_social_simyo"
+	    	    android:src="@drawable/social_simyo"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="2dp"
+	    	    android:layout_weight="1"/>
+	   		<ImageView android:id="@+id/planinfo_social_facebook"
+	    	    android:src="@drawable/social_facebook"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="2dp"
+	    	    android:layout_weight="1"/>
+	    	<ImageView android:id="@+id/planinfo_social_twitter"
+	    	    android:src="@drawable/social_twitter"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="2dp"
+	    	    android:layout_weight="1"/>
+	    	<ImageView android:id="@+id/planinfo_social_gplus"
+	    	    android:src="@drawable/social_gplus"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="2dp"
+	    	    android:layout_weight="1"/>
+	</LinearLayout>
+	
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f58a2d"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    
+    <Button android:id="@+id/planinfo_web"
+        	style="@style/customButton"
+            android:background="@drawable/gradient_orange"
+            android:text="@string/planinfo_web"
+            android:drawableLeft="@drawable/ic_location_web_site"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+	
+</LinearLayout>

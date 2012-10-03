@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView android:id="@+id/detail_line_operatorlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/plan_type_icon_description"/>
+
+        <TextView android:id="@+id/detail_line_contactname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#121212"/>
+                   
+        <TextView android:id="@+id/detail_line_msisdn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|right"
+            android:textSize="11sp"
+            android:textColor="#121212"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp">
+
+        <TextView android:id="@+id/detail_line_dateandduration"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:textSize="11sp"
+            android:textColor="#121212"/>
+
+        <TextView android:id="@+id/detail_line_totalamount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#f58a2d"
+            android:textStyle="bold"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+ </LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="background">#ff5900</color> <!-- 38 -->
+    <color name="actionbar_background_start">#ff9900</color> <!-- ff770c -->
+    <color name="actionbar_background_end">#ff6600</color>    <!-- ff3900 -->
+    
+    <color name="conzebit_highlight">#31afca</color>
+    <color name="conzebit_separator">#31afca</color>
+    
+    <color name="button_blue_start">#73bac6</color>
+    <color name="button_blue_end">#31aec6</color>
+    <color name="button_grey">#271818</color>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+    <string name="summary_logo_description">Simyo logo</string>
+    <string name="summary_menu_previous_period">Previous Period</string>
+    <string name="summary_menu_following_period">Following Period</string>
+    <string name="summary_call">Call and come to simyo</string>
+    <string name="summary_plan_detail">Plans information</string>
+    <string name="summary_line_arrow_description">Go to consumption detail</string>
+    <string name="summary_calculating">calculating&#8230;</string>
+    
+    <string name="plan_detail_title">Consumption detail</string>
+    <string name="plan_detail_purchase">Call and purchase it</string>
+    <string name="plan_month_fee">Month fee</string>
+    <string name="plan_minimum_month_fee">Minimum month fee</string>
+    <string name="plan_registered_calls_sms">Registered calls/SMS on your phone</string>
+    <string name="plan_billingperiod">Billing period:</string>
+    <string name="plan_data">Data Consumption</string>
+    <string name="plan_type_icon_description">Billed item type icon</string>
+
+    <string name="planinfo_web">Go to simyo.es</string>
+    <string name="planinfo_gigaplan">Tarifa GigaPLAN + 2GB</string>
+    <string name="planinfo_gigaplan_detail">
+    <![CDATA[
+	<ul>
+		<li class="detalles"><span style="color:#ff5900">150 min/mes</span> incluidos en la cuota</li>
+		<li class="detalles"><span style="color:#ff5900">Internet 2GB</span>. Una vez superado 2GB la velocidad baja a 64kbps</li>
+		<li class="detalles"><span style="color:#ff5900">7 cent/min</span> superados los 150 min.</li>
+		<li class="detalles"><span style="color:#ff5900">Sin establecimiento</span> de llamada</li>
+		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</style> mensaje texto nacional</li>
+		<li class="detalles"><span style="color:#ff5900">29 cent/MMS</style> mensaje multimedia nacional</li>
+		<li class="detalles">19,95&euro;/mes</li>
+		<li class="detalles">Sin compromiso de permanencia</li>
+		<li class="detalles">Precios sin IVA</li>
+	</ul>
+    ]]>
+    </string>
+    <string name="planinfo_5cents">Tarifa 5 cent + 555MB</string>
+    <string name="planinfo_5cents_detail">
+    <![CDATA[
+	<ul>
+		<li class="detalles"><span style="color:#ff5900">5 cent/min</span> llamadas a m&oacute;viles y fijos nacionales</li>
+		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
+		<li class="detalles">Internet M&oacute;vil <span style="color:#ff5900">555MB/mes &iexcl;DE REGALO!</span> (luego a 3cent/MB)</li>
+		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
+		<li class="detalles"><span style="color:#ff5900">29 cent/MMS</span> mensaje multimedia nacional</li>
+		<li class="detalles">6,99&euro;/mes de consumo m&iacute;nimo</li>
+		<li class="detalles">Sin compromiso de permanencia</li>
+		<li class="detalles">Precios sin IVA</li>
+	</ul>
+    ]]>
+    </string>
+    <string name="planinfo_3cents">Tarifa 3 cent + 650MB</string>
+    <string name="planinfo_3cents_detail">
+    <![CDATA[
+	<ul>
+		<li class="detalles"><span style="color:#ff5900">3 cent/min</span> llamadas a m&oacute;viles y fijos nacionales</li>
+		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
+		<li class="detalles"><span style="color:#ff5900">Internet m&oacute;vil Incluido</span> (650MB/mes, luego a 3cent/MB)</li>
+		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
+		<li class="detalles"><span style="color:#ff5900">39 cent/MMS</span> mensaje multimedia nacional</li>
+		<li class="detalles">6,95&euro;/mes de Cuota mensual</li>
+		<li class="detalles">Sin compromiso de permanencia</li>
+		<li class="detalles">Precios sin IVA</li>
+	</ul>
+    ]]>
+    </string>
+    <string name="planinfo_0_6cents">Tarifa 0/6 cent + 50MB</string>
+    <string name="planinfo_0_6cents_detail">
+    <![CDATA[
+	<ul>
+		<li class="detalles"><span style="color:#ff5900">0 cent/min (los primeros 10 minutos de cada llamada)</span> entre n&uacute;meros de simyo y <span style="color:#ff5900">6 cent/min</span> llamadas al resto de m&oacute;viles y fijos nacionales</li>
+		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
+		<li class="detalles">Internet M&oacute;vil <span style="color:#ff5900">50MB/mes &iexcl;DE REGALO!</span> (luego a 3cent/MB)</li>
+		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
+		<li class="detalles"><span style="color:#ff5900">39 cent/MMS</span> mensaje multimedia nacional</li>
+		<li class="detalles">3,99&euro;/mes de consumo m&iacute;nimo</li>
+		<li class="detalles">Sin compromiso de permanencia</li>
+		<li class="detalles">Precios sin IVA</li>
+	</ul>
+    ]]>
+    </string>
+    
+    <string name="planinfo_detail_call">Call and purchase it</string>
+    <string name="planinfo_detail_web">Go to simyo.es</string>
+    	
+    <string name="settings_billingday">Billing day</string>
+    <string name="settings_taxes">Show charges with taxes</string>
+    
+    <string name="stats_title">Global statistics</string>
+    <string name="stats_missed_calls">Missed calls</string>
+    <string name="stats_answered_calls">Answered calls</string>
+    <string name="stats_inbound_calls">Inbound calls</string>
+    <string name="stats_outbound_calls">Outbound calls</string>
+    <string name="stats_inbound_seconds">Inbound seconds</string>
+    <string name="stats_outbound_seconds">Outbound seconds</string>
+    <string name="stats_total_calls">Total calls</string>
+    <string name="stats_shortest_call">Shortest call</string>
+    <string name="stats_longest_call">Longest call</string>
+    <string name="stats_average_call">Average call</string>
+    <string name="stats_menu_general_data">Datos generales</string>
+    <string name="stats_menu_top_caller_calls">Números más llamados (cantidad)</string>
+    <string name="stats_menu_top_caller_duration">Números más llamados (tiempo)</string>
+    
+    <string name="disclaimer">Disclaimer</string>
+    <string name="disclaimer_ok_button">Accept</string>
+    <string name="disclaimer_text">
+    <![CDATA[
+	<span style="color:#ff5900">Encoge tu factura</span> es una aplicaci&oacute;n gratuita y de c&oacute;digo abierto ofrecida por <span style="color:#ff5900">simyo</span> (KPN Spain, SLU).
+	<br/><br/>Los c&aacute;lculos de tarificaci&oacute;n se realizan lo m&aacute;s verazmente posible, en base a los datos de llamadas y SMS registrados en el terminal en el que est&aacute; instalada.
+	<br/><br/>Los MBs de datos consumidos solamente pueden contarse a partir de la instalaci&oacute;n de la aplicaci&oacute;n.
+	<br/><br/><span style="color:#ff5900">simyo</span> no se hace responsable de la posible inexactitud de los datos mostrados.
+	<br/><br/>Ninguno de los datos registrados en el terminal ni de los c&aacute;lculos presentados es transferido fuera del terminal.
+	<br/><br/>El uso de esta aplicaci&oacute;n implica la aceptaci&oacute;n expresa de lo anteriormente expuesto.
+    ]]>
+    </string>
+
+    <string name="appdetail_title">How we calculate it?</string>
+    <string name="appdetail_text">
+    <![CDATA[
+	Con esta aplicaci&oacute;n podr&aacute;s hacerte una idea aproximada de lo barato que resulta <span style="color:#ff5900">simyo</span> pero tambi&eacute;n debes tener en cuenta que:    
+    <ul>
+	<li>Esta aplicaci&oacute;n es de car&aacute;cter meramente informativo y no vinculante.</li>
+	<li>El consumo indicado se calcula de forma aproximada con la informaci&oacute;n recogida en tu terminal, pudiendo haber discrepancias con la informaci&oacute;n proporcionada por los sistemas de tu actual operador.</li>
+	<li>La tarificaci&oacute;n de numeraci&oacute;n adicional, internacionales, roaming, ... puede presentar discrepancias.</li>
+	<li>Los importes mostrados incluyen los paquetes completos de datos correspondientes a cada tarifa, aunque el consumo de datos mostrado solamente comienza a recogerse a partir de la instalaci&oacute;n de la aplicaci&oacute;n.</li>
+	<li>Asegura configurar correctamente el d&iacute;a de inicio del ciclo de facturaci&oacute;n.</li>
+	<li><span style="color:#ff5900">simyo</span> no recoge, trata ni almacena los datos de tu terminal utilizados por esta aplicaci&oacute;n.</li>
+	</ul>
+	O lo que es lo mismo, se trata de un c&aacute;lculo aproximado, no te lo tomes "a pies juntillas" ;)<br/>
+	M&aacute;s informaci&oacute;n en <a href="https://play.google.com/store/apps/details?id=es.simyo.encogetufactura">Google Play</a>
+    ]]>
+    </string>
+
+ </resources>

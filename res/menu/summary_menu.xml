@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/menu_stats"
+    	  android:title="Estadísticas"
+		  android:icon="@drawable/ic_content_picture"
+		  android:showAsAction="always"/>
+
+	<item android:id="@+id/menu_share"
+          android:title="Compartir"
+          android:icon="@drawable/ic_social_share"
+          android:showAsAction="always"/>
+
+	<item android:id="@+id/menu_settings"
+		  android:title="Configuración"
+		  android:icon="@drawable/ic_action_settings"
+		  android:showAsAction="always"/>
+
+</menu>

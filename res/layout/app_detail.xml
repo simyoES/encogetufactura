@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:padding="5dp">
+
+	<LinearLayout android:id="@+id/appdetail_title"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+    
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/appdetail_title"
+		    android:textSize="17sp"
+		    android:textStyle="bold"
+		    android:textColor="@android:color/black"/>
+	
+	    <TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="2dp"
+	        android:background="#f58a2d"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"/>
+	</LinearLayout>
+	
+    <WebView android:id="@+id/appdetail_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/appdetail_title"/>
+    
+	
+</RelativeLayout>
