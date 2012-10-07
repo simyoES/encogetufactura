@@ -37,25 +37,14 @@ public class SplashActivity extends Activity {
 		setContentView(R.layout.splash);
 	}
 	
-	private boolean cont = true;
-
 	@Override
 	protected void onResume() {
 		super.onResume();
 		
-		this.findViewById(R.id.encoge_tu_factura).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				cont = false;
-				AndroidUtils.sendMail(SplashActivity.this, "sanz@arcies.com", "rxtx database", new MyPlanDBHelper(SplashActivity.this).getAll());
-			}
-		});
-
 		new Handler().postDelayed(new Runnable() {
 			public void run() {
-				if (cont) {
-					SplashActivity.this.finish();
-					SplashActivity.this.startActivity(new Intent(SplashActivity.this, PlanSummaryActivity.class));
-				}
+				SplashActivity.this.finish();
+				SplashActivity.this.startActivity(new Intent(SplashActivity.this, PlanSummaryActivity.class));
 			}
 		}, SPLASH_DISPLAY_LENGTH);
 	}
