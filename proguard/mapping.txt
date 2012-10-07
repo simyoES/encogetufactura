@@ -5272,7 +5272,6 @@ com.conzebit.myplan.android.store.MyPlanDBHelper -> com.a.a.a.a.g:
     com.conzebit.myplan.android.store.MyPlanDBHelper$CountryInterval getCountryIntervalForDate(long,java.lang.String) -> a
     void storeDataRxTx(long,long,java.lang.String) -> a
     java.util.ArrayList getDataRxTx(long,long) -> a
-    java.lang.String getAll() -> a
 com.conzebit.myplan.android.store.MyPlanDBHelper$CountryInterval -> com.a.a.a.a.h:
     long from -> a
     long to -> b
@@ -5549,7 +5548,6 @@ com.conzebit.util.AndroidUtils -> com.a.b.a:
     java.lang.String getTelephonyManagerCountryCode(android.telephony.TelephonyManager) -> a
     void callPhone(android.content.Context,java.lang.String) -> a
     void openURL(android.content.Context,java.lang.String) -> b
-    boolean sendMail(android.content.Context,java.lang.String,java.lang.String,java.lang.String) -> a
 com.conzebit.util.Formatter -> com.a.b.b:
     java.text.SimpleDateFormat simpleDateFormatFull -> a
     java.text.SimpleDateFormat simpleDateFormat -> b
@@ -6031,27 +6029,21 @@ es.simyo.encogetufactura.activity.SettingsActivity$2 -> es.simyo.encogetufactura
     boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
 es.simyo.encogetufactura.activity.SplashActivity -> es.simyo.encogetufactura.activity.SplashActivity:
     int SPLASH_DISPLAY_LENGTH -> a
-    boolean cont -> b
     void onCreate(android.os.Bundle) -> onCreate
     void onResume() -> onResume
-    void access$0(es.simyo.encogetufactura.activity.SplashActivity,boolean) -> a
-    boolean access$1(es.simyo.encogetufactura.activity.SplashActivity) -> a
 es.simyo.encogetufactura.activity.SplashActivity$1 -> es.simyo.encogetufactura.activity.ad:
     es.simyo.encogetufactura.activity.SplashActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.SplashActivity$2 -> es.simyo.encogetufactura.activity.ae:
-    es.simyo.encogetufactura.activity.SplashActivity this$0 -> a
     void run() -> run
-es.simyo.encogetufactura.activity.StatisticsAdapter -> es.simyo.encogetufactura.activity.af:
+es.simyo.encogetufactura.activity.StatisticsAdapter -> es.simyo.encogetufactura.activity.ae:
     int layoutID -> a
     android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
     int access$0(es.simyo.encogetufactura.activity.StatisticsAdapter) -> a
-es.simyo.encogetufactura.activity.StatisticsAdapter$StatisticsAdapterView -> es.simyo.encogetufactura.activity.ag:
+es.simyo.encogetufactura.activity.StatisticsAdapter$StatisticsAdapterView -> es.simyo.encogetufactura.activity.af:
     es.simyo.encogetufactura.activity.StatisticsAdapter this$0 -> a
 es.simyo.encogetufactura.activity.StatisticsDetailActivity -> es.simyo.encogetufactura.activity.StatisticsDetailActivity:
     boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
     void onCreate(android.os.Bundle) -> onCreate
-es.simyo.encogetufactura.activity.StatisticsHelper -> es.simyo.encogetufactura.activity.ah:
+es.simyo.encogetufactura.activity.StatisticsHelper -> es.simyo.encogetufactura.activity.ag:
     java.util.ArrayList calls -> a
     java.util.ArrayList getStatisticsData(android.app.Activity,java.util.Date,java.util.Date,int) -> a
     java.util.ArrayList getSummary(android.app.Activity) -> a

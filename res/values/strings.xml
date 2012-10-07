@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Encoge tu factura</string>
-    <string name="app_version">1.0.0</string>
+    <string name="app_version">1.0.1</string>
 
     <string name="summary_logo_description">Logotipo de Simyo</string>
     <string name="summary_menu_previous_period">Periodo Anterior</string>

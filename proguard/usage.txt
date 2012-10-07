@@ -269,11 +269,12 @@ com.conzebit.myplan.android.store.MyPlanDBHelper:
     private static final long GPRS_MIN_DIFF
     private static final java.lang.String GPRS_SELECT_ALL
     112:127:public java.lang.String getCountryForDate(long,java.lang.String)
+    241:270:public java.lang.String getAll()
 com.conzebit.myplan.android.store.MyPlanDBHelper$DataInterval
 com.conzebit.myplan.android.store.SMSLogStore:
     public static final int MESSAGE_TYPE_INBOX
     public static final int MESSAGE_TYPE_SENT
-    38:38:SMSLogStore()
+    39:39:SMSLogStore()
 com.conzebit.myplan.android.store.data.DataStore:
     private static final java.lang.String LOG_TAG
 com.conzebit.myplan.android.store.data.DebugDevice
@@ -383,6 +384,7 @@ com.conzebit.util.AndroidUtils:
     60:69:public static java.lang.String getAppFullVersion(android.content.Context)
     73:75:public static void forceHideKeyboard(android.content.Context,android.os.IBinder)
     78:83:public static java.lang.String getIMEI(android.content.Context)
+    98:115:public static boolean sendMail(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
     119:128:public static boolean showMap(android.content.Context,java.lang.String)
     132:135:public static void installRemoteAPK(android.content.Context,java.lang.String)
 com.conzebit.util.Formatter:

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       android:installLocation="auto"
       package="es.simyo.encogetufactura"
-      android:versionCode="169"
+      android:versionCode="170"
       android:versionName="@string/app_version">
     
     <supports-screens
