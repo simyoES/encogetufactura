@@ -33,6 +33,10 @@ public class AndroidUtils {
 	public static Boolean isTestMode(Context context) {
 		return "sdk".equals(Build.PRODUCT) || "google_sdk".equals(Build.PRODUCT);
     }
+
+	public static int getAndroidAPILevel() {
+		return android.os.Build.VERSION.SDK_INT;
+    }
 	
 	public static String getAppVersionCode(Context context) {
         String ret = "";

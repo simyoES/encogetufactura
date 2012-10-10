@@ -310,7 +310,7 @@ com.conzebit.myplan.android.util.AndroidResourcesUtil:
     22:22:public AndroidResourcesUtil()
     41:41:public static int getOperatorResourceImage(java.lang.String)
 com.conzebit.myplan.android.util.Settings:
-    26:26:public Settings()
+    29:29:public Settings()
 com.conzebit.myplan.core.Chargeable:
     public static final int CHARGEABLE_TYPE_CALL
     public static final int CHARGEABLE_TYPE_SMS
@@ -380,13 +380,13 @@ com.conzebit.myplan.ext.es.ESPlan:
 com.conzebit.util.AndroidUtils:
     private static final java.lang.String TAG
     29:29:public AndroidUtils()
-    38:45:public static java.lang.String getAppVersionCode(android.content.Context)
-    60:69:public static java.lang.String getAppFullVersion(android.content.Context)
-    73:75:public static void forceHideKeyboard(android.content.Context,android.os.IBinder)
-    78:83:public static java.lang.String getIMEI(android.content.Context)
-    98:115:public static boolean sendMail(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
-    119:128:public static boolean showMap(android.content.Context,java.lang.String)
-    132:135:public static void installRemoteAPK(android.content.Context,java.lang.String)
+    42:49:public static java.lang.String getAppVersionCode(android.content.Context)
+    64:73:public static java.lang.String getAppFullVersion(android.content.Context)
+    77:79:public static void forceHideKeyboard(android.content.Context,android.os.IBinder)
+    82:87:public static java.lang.String getIMEI(android.content.Context)
+    102:119:public static boolean sendMail(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
+    123:132:public static boolean showMap(android.content.Context,java.lang.String)
+    136:139:public static void installRemoteAPK(android.content.Context,java.lang.String)
 com.conzebit.util.Formatter:
     24:24:public Formatter()
     38:38:public static java.lang.String formatDate(java.util.Calendar)

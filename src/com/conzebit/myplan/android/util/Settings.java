@@ -18,14 +18,18 @@ package com.conzebit.myplan.android.util;
 
 import java.util.HashMap;
 
+import com.conzebit.util.AndroidUtils;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.os.Build;
 import android.preference.PreferenceManager;
 
 public class Settings {
 	
-	private static final String[] vatList = {"No", "Melilla (IPSI 4%)", "Canarias (IGIC 7%)", "Ceuta (IPSI 8%)", "Península y Baleares (IVA 21%)"};
+	private static final String[] vatListPreHoneyComb = {"No", "Melilla (IPSI 4%)", "Canarias (IGIC 7%)", "Ceuta (IPSI 8%)", "Península y Baleares (IVA 21%)"};
+	private static final String[] vatListPostHoneyComb = {"No", "Melilla (IPSI 4%%)", "Canarias (IGIC 7%%)", "Ceuta (IPSI 8%%)", "Península y Baleares (IVA 21%%)"};
 	private static final String[] vatValueList = {"0", "4", "7", "8", "21"};
 
 	public enum Setting {
@@ -48,7 +52,11 @@ public class Settings {
 	}
 	
 	public static String[] getVATList() {
-		return vatList;
+		if (AndroidUtils.getAndroidAPILevel() < Build.VERSION_CODES.HONEYCOMB) {
+			return vatListPreHoneyComb;
+		} else {
+			return vatListPostHoneyComb;
+		}
 	}
 
 	public static String[] getVATValueList() {
@@ -66,7 +74,7 @@ public class Settings {
 			}
 			pos++;
 		}
-		return vatList[pos];
+		return getVATList()[pos];
 	}
 
     public static int getVATValue(Context context) {

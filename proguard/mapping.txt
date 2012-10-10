@@ -5325,8 +5325,9 @@ com.conzebit.myplan.android.util.AndroidResourcesUtil -> com.a.a.a.b.a:
     int getMsisdnTypeResourceImage(com.conzebit.myplan.core.msisdn.MsisdnType) -> a
     int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> a
 com.conzebit.myplan.android.util.Settings -> com.a.a.a.b.b:
-    java.lang.String[] vatList -> a
-    java.lang.String[] vatValueList -> b
+    java.lang.String[] vatListPreHoneyComb -> a
+    java.lang.String[] vatListPostHoneyComb -> b
+    java.lang.String[] vatValueList -> c
     java.lang.String[] getVATList() -> a
     java.lang.String[] getVATValueList() -> b
     java.lang.String getVATItem(int) -> a
@@ -5545,6 +5546,7 @@ com.conzebit.myplan.ext.es.ESPlan -> com.a.a.c.a.b:
     java.lang.String getScreenPlanName() -> d
 com.conzebit.util.AndroidUtils -> com.a.b.a:
     java.lang.Boolean isTestMode(android.content.Context) -> a
+    int getAndroidAPILevel() -> a
     java.lang.String getTelephonyManagerCountryCode(android.telephony.TelephonyManager) -> a
     void callPhone(android.content.Context,java.lang.String) -> a
     void openURL(android.content.Context,java.lang.String) -> b
