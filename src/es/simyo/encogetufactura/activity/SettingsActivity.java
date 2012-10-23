@@ -79,17 +79,15 @@ public class SettingsActivity extends SherlockPreferenceActivity {
 
         // VAT
         final ListPreference vatPref = new ListPreference(this);
-        String[] vatList = Settings.getVATList();
-        String[] vatValueList = Settings.getVATValueList();
-        vatPref.setEntries(vatList);
-        vatPref.setEntryValues(vatValueList);
+        vatPref.setEntries(R.array.settings_vat);
+        vatPref.setEntryValues(R.array.settings_vat_value);
         vatPref.setDialogTitle(R.string.settings_taxes);
         vatPref.setKey(Settings.Setting.VAT.toString());
         vatPref.setTitle(R.string.settings_taxes);
-       	vatPref.setSummary(Settings.getVATItem(Settings.getVATValue(this)));
+       	vatPref.setSummary(Settings.getVATItem(this, Settings.getVATValue(this)));
         vatPref.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 		  	public boolean onPreferenceChange(Preference preference, Object newValue) {
-			  	vatPref.setSummary(Settings.getVATItem(newValue.toString()));
+			  	vatPref.setSummary(Settings.getVATItem(SettingsActivity.this, newValue.toString()));
 			  	Settings.setVATValue(SettingsActivity.this, newValue.toString());
 				return true;
 			}

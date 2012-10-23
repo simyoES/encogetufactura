@@ -18,20 +18,14 @@ package com.conzebit.myplan.android.util;
 
 import java.util.HashMap;
 
-import com.conzebit.util.AndroidUtils;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.os.Build;
 import android.preference.PreferenceManager;
+import es.simyo.encogetufactura.R;
 
 public class Settings {
 	
-	private static final String[] vatListPreHoneyComb = {"No", "Melilla (IPSI 4%)", "Canarias (IGIC 7%)", "Ceuta (IPSI 8%)", "Península y Baleares (IVA 21%)"};
-	private static final String[] vatListPostHoneyComb = {"No", "Melilla (IPSI 4%%)", "Canarias (IGIC 7%%)", "Ceuta (IPSI 8%%)", "Península y Baleares (IVA 21%%)"};
-	private static final String[] vatValueList = {"0", "4", "7", "8", "21"};
-
 	public enum Setting {
 		BILLINGDAY("billingday_preference"),
 		TERMS_AND_CONDITIONS_SHOWN("terms_and_conditions_shown"),
@@ -51,30 +45,31 @@ public class Settings {
 		}
 	}
 	
-	public static String[] getVATList() {
-		if (AndroidUtils.getAndroidAPILevel() < Build.VERSION_CODES.HONEYCOMB) {
-			return vatListPreHoneyComb;
-		} else {
-			return vatListPostHoneyComb;
-		}
+	public static int getVATItem(Context context, int vatValue) {
+		return getVATItem(context, "" + vatValue);
 	}
-
-	public static String[] getVATValueList() {
-		return vatValueList;
-	}
-	
-	public static String getVATItem(int vatValue) {
-		return getVATItem("" + vatValue);
-	}
-	public static String getVATItem(String vatValue) {
+	public static int getVATItem(Context context, String vatValue) {
 		int pos = 0;
-		for (String vatValueItem : vatValueList) {
+		for (String vatValueItem : context.getResources().getStringArray(R.array.settings_vat_value)) {
 			if (vatValueItem.equals(vatValue)) {
 				break;
 			}
 			pos++;
 		}
-		return getVATList()[pos];
+		switch (pos) {
+		case 0:
+			return R.string.settings_vat_no;
+		case 1:
+			return R.string.settings_vat_ipsi_melilla;
+		case 2:
+			return R.string.settings_vat_igic_canarias;
+		case 3:
+			return R.string.settings_vat_ipsi_ceuta;
+		case 4:
+			return R.string.settings_vat_peninsula_baleares;
+		default:
+			return R.string.settings_vat_no;
+		}
 	}
 
     public static int getVATValue(Context context) {

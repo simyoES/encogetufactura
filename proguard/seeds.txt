@@ -1098,6 +1098,10 @@ com.actionbarsherlock.ActionBarSherlock$OnPreparePanelListener
 com.actionbarsherlock.ActionBarSherlock$OnPreparePanelListener: boolean onPreparePanel(int,android.view.View,com.actionbarsherlock.view.Menu)
 com.actionbarsherlock.R
 com.actionbarsherlock.R: R()
+com.actionbarsherlock.R$array
+com.actionbarsherlock.R$array: int settings_vat
+com.actionbarsherlock.R$array: int settings_vat_value
+com.actionbarsherlock.R$array: R$array()
 com.actionbarsherlock.R$attr
 com.actionbarsherlock.R$attr: int absForceOverflow
 com.actionbarsherlock.R$attr: int actionBarDivider
@@ -1526,6 +1530,11 @@ com.actionbarsherlock.R$string: int planinfo_gigaplan_detail
 com.actionbarsherlock.R$string: int planinfo_web
 com.actionbarsherlock.R$string: int settings_billingday
 com.actionbarsherlock.R$string: int settings_taxes
+com.actionbarsherlock.R$string: int settings_vat_igic_canarias
+com.actionbarsherlock.R$string: int settings_vat_ipsi_ceuta
+com.actionbarsherlock.R$string: int settings_vat_ipsi_melilla
+com.actionbarsherlock.R$string: int settings_vat_no
+com.actionbarsherlock.R$string: int settings_vat_peninsula_baleares
 com.actionbarsherlock.R$string: int stats_answered_calls
 com.actionbarsherlock.R$string: int stats_average_call
 com.actionbarsherlock.R$string: int stats_inbound_calls
@@ -5295,6 +5304,8 @@ com.google.i18n.phonenumbers.Phonenumber$PhoneNumber$CountryCodeSource: com.goog
 com.google.i18n.phonenumbers.Phonenumber$PhoneNumber$CountryCodeSource: com.google.i18n.phonenumbers.Phonenumber$PhoneNumber$CountryCodeSource valueOf(java.lang.String)
 es.simyo.encogetufactura.EncogeTuFacturaApp
 es.simyo.encogetufactura.EncogeTuFacturaApp: EncogeTuFacturaApp()
+es.simyo.encogetufactura.R$array: int settings_vat
+es.simyo.encogetufactura.R$array: int settings_vat_value
 es.simyo.encogetufactura.R$attr: int absForceOverflow
 es.simyo.encogetufactura.R$attr: int actionBarDivider
 es.simyo.encogetufactura.R$attr: int actionBarItemBackground
@@ -5704,6 +5715,11 @@ es.simyo.encogetufactura.R$string: int planinfo_gigaplan_detail
 es.simyo.encogetufactura.R$string: int planinfo_web
 es.simyo.encogetufactura.R$string: int settings_billingday
 es.simyo.encogetufactura.R$string: int settings_taxes
+es.simyo.encogetufactura.R$string: int settings_vat_igic_canarias
+es.simyo.encogetufactura.R$string: int settings_vat_ipsi_ceuta
+es.simyo.encogetufactura.R$string: int settings_vat_ipsi_melilla
+es.simyo.encogetufactura.R$string: int settings_vat_no
+es.simyo.encogetufactura.R$string: int settings_vat_peninsula_baleares
 es.simyo.encogetufactura.R$string: int stats_answered_calls
 es.simyo.encogetufactura.R$string: int stats_average_call
 es.simyo.encogetufactura.R$string: int stats_inbound_calls

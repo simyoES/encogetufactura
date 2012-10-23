@@ -23,6 +23,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
@@ -203,7 +204,7 @@ public class PlanSummaryActivity extends SherlockListActivity {
     }
 
 	private class LoadDataTask extends AsyncTask<Void, Void, ArrayList<PlanSummary>> {
-		private final ProgressDialog dialog = new ProgressDialog(PlanSummaryActivity.this);
+		private ProgressDialog dialog = new ProgressDialog(PlanSummaryActivity.this);
 
 		protected void onPreExecute() {
 			this.dialog.setMessage(PlanSummaryActivity.this.getText(R.string.summary_calculating));
@@ -236,8 +237,11 @@ public class PlanSummaryActivity extends SherlockListActivity {
 		}
 
 		protected void onPostExecute(final ArrayList<PlanSummary> planSummaries) {
-			if (this.dialog.isShowing()) {
+			try {
 				this.dialog.dismiss();
+				this.dialog = null;
+			} catch (Exception e) {
+				Log.e("simyo", "error", e);
 			}
 			PlanSummaryAdapter summaryAdapter = new PlanSummaryAdapter(PlanSummaryActivity.this, 0, planSummaries);
 			setListAdapter(summaryAdapter);

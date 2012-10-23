@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Encoge tu factura</string>
-    <string name="app_version">1.0.1</string>
+    <string name="app_version">1.0.2</string>
 
     <string name="summary_logo_description">Logotipo de Simyo</string>
     <string name="summary_menu_previous_period">Periodo Anterior</string>
@@ -88,7 +88,26 @@
     	
     <string name="settings_billingday">Día inicio facturación</string>
     <string name="settings_taxes">Importes con impuestos</string>
-
+    <string name="settings_vat_no">No</string>
+    <string name="settings_vat_ipsi_melilla">Melilla (IPSI 4)</string>
+    <string name="settings_vat_igic_canarias">Canarias (IGIC 7)</string>
+    <string name="settings_vat_ipsi_ceuta">Ceuta (IPSI 8)</string>
+    <string name="settings_vat_peninsula_baleares">Península y Baleares (IVA 21)</string>
+    <string-array name="settings_vat">
+        <item>@string/settings_vat_no</item>
+        <item>@string/settings_vat_ipsi_melilla</item>
+        <item>@string/settings_vat_igic_canarias</item>
+        <item>@string/settings_vat_ipsi_ceuta</item>
+        <item>@string/settings_vat_peninsula_baleares</item>
+    </string-array>
+    <string-array name="settings_vat_value">
+        <item>0</item>
+        <item>4</item>
+        <item>7</item>
+        <item>8</item>
+        <item>21</item>
+    </string-array>
+    
     <string name="stats_title">Estadísticas historial</string>
     <string name="stats_missed_calls">Llamadas perdidas</string>
     <string name="stats_answered_calls">Llamadas contestadas</string>

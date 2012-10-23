@@ -1341,6 +1341,9 @@ com.actionbarsherlock.ActionBarSherlock$OnPrepareOptionsMenuListener -> com.acti
 com.actionbarsherlock.ActionBarSherlock$OnPreparePanelListener -> com.actionbarsherlock.ActionBarSherlock$OnPreparePanelListener:
     boolean onPreparePanel(int,android.view.View,com.actionbarsherlock.view.Menu) -> onPreparePanel
 com.actionbarsherlock.R -> com.actionbarsherlock.R:
+com.actionbarsherlock.R$array -> com.actionbarsherlock.R$array:
+    int settings_vat -> settings_vat
+    int settings_vat_value -> settings_vat_value
 com.actionbarsherlock.R$attr -> com.actionbarsherlock.R$attr:
     int absForceOverflow -> absForceOverflow
     int actionBarDivider -> actionBarDivider
@@ -1760,6 +1763,11 @@ com.actionbarsherlock.R$string -> com.actionbarsherlock.R$string:
     int planinfo_web -> planinfo_web
     int settings_billingday -> settings_billingday
     int settings_taxes -> settings_taxes
+    int settings_vat_igic_canarias -> settings_vat_igic_canarias
+    int settings_vat_ipsi_ceuta -> settings_vat_ipsi_ceuta
+    int settings_vat_ipsi_melilla -> settings_vat_ipsi_melilla
+    int settings_vat_no -> settings_vat_no
+    int settings_vat_peninsula_baleares -> settings_vat_peninsula_baleares
     int stats_answered_calls -> stats_answered_calls
     int stats_average_call -> stats_average_call
     int stats_inbound_calls -> stats_inbound_calls
@@ -5325,18 +5333,13 @@ com.conzebit.myplan.android.util.AndroidResourcesUtil -> com.a.a.a.b.a:
     int getMsisdnTypeResourceImage(com.conzebit.myplan.core.msisdn.MsisdnType) -> a
     int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> a
 com.conzebit.myplan.android.util.Settings -> com.a.a.a.b.b:
-    java.lang.String[] vatListPreHoneyComb -> a
-    java.lang.String[] vatListPostHoneyComb -> b
-    java.lang.String[] vatValueList -> c
-    java.lang.String[] getVATList() -> a
-    java.lang.String[] getVATValueList() -> b
-    java.lang.String getVATItem(int) -> a
-    java.lang.String getVATItem(java.lang.String) -> a
+    int getVATItem(android.content.Context,int) -> a
+    int getVATItem(android.content.Context,java.lang.String) -> a
     int getVATValue(android.content.Context) -> a
-    void setVATValue(android.content.Context,java.lang.String) -> a
+    void setVATValue(android.content.Context,java.lang.String) -> b
     java.lang.String getBillingDay(android.content.Context) -> b
     boolean showTermsAndConditions(android.content.Context) -> c
-    void setTermsShown(android.content.Context,java.lang.String) -> b
+    void setTermsShown(android.content.Context,java.lang.String) -> c
     java.util.HashMap getAllConfig(android.content.Context) -> d
 com.conzebit.myplan.android.util.Settings$Setting -> com.a.a.a.b.c:
     com.conzebit.myplan.android.util.Settings$Setting BILLINGDAY -> a
@@ -5546,7 +5549,6 @@ com.conzebit.myplan.ext.es.ESPlan -> com.a.a.c.a.b:
     java.lang.String getScreenPlanName() -> d
 com.conzebit.util.AndroidUtils -> com.a.b.a:
     java.lang.Boolean isTestMode(android.content.Context) -> a
-    int getAndroidAPILevel() -> a
     java.lang.String getTelephonyManagerCountryCode(android.telephony.TelephonyManager) -> a
     void callPhone(android.content.Context,java.lang.String) -> a
     void openURL(android.content.Context,java.lang.String) -> b

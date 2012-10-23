@@ -310,7 +310,7 @@ com.conzebit.myplan.android.util.AndroidResourcesUtil:
     22:22:public AndroidResourcesUtil()
     41:41:public static int getOperatorResourceImage(java.lang.String)
 com.conzebit.myplan.android.util.Settings:
-    29:29:public Settings()
+    27:27:public Settings()
 com.conzebit.myplan.core.Chargeable:
     public static final int CHARGEABLE_TYPE_CALL
     public static final int CHARGEABLE_TYPE_SMS
@@ -380,6 +380,7 @@ com.conzebit.myplan.ext.es.ESPlan:
 com.conzebit.util.AndroidUtils:
     private static final java.lang.String TAG
     29:29:public AndroidUtils()
+    38:38:public static int getAndroidAPILevel()
     42:49:public static java.lang.String getAppVersionCode(android.content.Context)
     64:73:public static java.lang.String getAppFullVersion(android.content.Context)
     77:79:public static void forceHideKeyboard(android.content.Context,android.os.IBinder)
@@ -610,6 +611,7 @@ es.simyo.encogetufactura.EncogeTuFacturaApp:
     public static final java.lang.String CALL_NUMBER
     56:56:public com.conzebit.myplan.core.msisdn.MsisdnTypeService getMsisdnTypeService()
 es.simyo.encogetufactura.R
+es.simyo.encogetufactura.R$array
 es.simyo.encogetufactura.R$attr
 es.simyo.encogetufactura.R$bool
 es.simyo.encogetufactura.R$color
