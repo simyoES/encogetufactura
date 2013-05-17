@@ -13,10 +13,10 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"/>
 
-    <Button android:id="@+id/planinfo_gigaplan"
+    <Button android:id="@+id/planinfo_pura"
         	style="@style/customButtonWhite"
             android:background="@drawable/gradient_gray"
-            android:text="@string/planinfo_gigaplan"
+            android:text="@string/planinfo_pura"
             android:textColor="@android:color/black"
             android:drawableRight="@drawable/ic_navigation_next_item_black"
             android:layout_width="fill_parent"
@@ -31,10 +31,10 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"/>
     
-    <Button android:id="@+id/planinfo_3cents"
+    <Button android:id="@+id/planinfo_2cents"
         	style="@style/customButtonWhite"
             android:background="@drawable/gradient_gray"
-            android:text="@string/planinfo_3cents"
+            android:text="@string/planinfo_2cents"
             android:textColor="@android:color/black"
             android:drawableRight="@drawable/ic_navigation_next_item_black"
             android:layout_width="fill_parent"

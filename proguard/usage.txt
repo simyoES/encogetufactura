@@ -634,15 +634,15 @@ es.simyo.encogetufactura.plan.ESSimyo:
     private static final double INTERNATIONAL_PRICE_PER_SECOND_CU_KP_SO
     private static final double INTERNATIONAL_SMS_PRICE
     private static final double DATARXTX_KB_EXPRA_PRICE
-es.simyo.encogetufactura.plan.ESSimyo0y6centimos:
+es.simyo.encogetufactura.plan.ESSimyo0y5centimos:
     52:52:public java.lang.String getPlanURL()
 es.simyo.encogetufactura.plan.ESSimyo0y8centimos
-es.simyo.encogetufactura.plan.ESSimyo3centimos:
+es.simyo.encogetufactura.plan.ESSimyo2centimos:
     51:51:public java.lang.String getPlanURL()
 es.simyo.encogetufactura.plan.ESSimyo5centimos:
     51:51:public java.lang.String getPlanURL()
-es.simyo.encogetufactura.plan.ESSimyoGigaplan:
-    56:56:public java.lang.String getPlanURL()
+es.simyo.encogetufactura.plan.ESSimyoPura:
+    50:50:public java.lang.String getPlanURL()
 es.simyo.encogetufactura.receiver.NetworkReceiver:
     private static final long SHORT_DELAY
     private static final long LONG_DELAY

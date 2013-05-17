@@ -26,10 +26,10 @@ import com.conzebit.myplan.core.Chargeable;
 import com.conzebit.myplan.core.call.Call;
 import com.conzebit.myplan.core.msisdn.MsisdnType;
 
-import es.simyo.encogetufactura.plan.ESSimyo0y6centimos;
-import es.simyo.encogetufactura.plan.ESSimyo3centimos;
+import es.simyo.encogetufactura.plan.ESSimyo0y5centimos;
+import es.simyo.encogetufactura.plan.ESSimyo2centimos;
 import es.simyo.encogetufactura.plan.ESSimyo5centimos;
-import es.simyo.encogetufactura.plan.ESSimyoGigaplan;
+import es.simyo.encogetufactura.plan.ESSimyoPura;
 
 
 public class PlanService {
@@ -45,10 +45,10 @@ public class PlanService {
 	private PlanService() {
 		this.plans = new ArrayList<AbstractPlan>();
 
-		this.plans.add(new ESSimyo3centimos());
+		this.plans.add(new ESSimyo2centimos());
 		this.plans.add(new ESSimyo5centimos());
-		this.plans.add(new ESSimyo0y6centimos());
-		this.plans.add(new ESSimyoGigaplan());
+		this.plans.add(new ESSimyo0y5centimos());
+		this.plans.add(new ESSimyoPura());
 
 		this.process(new ArrayList<Chargeable>());
 	}

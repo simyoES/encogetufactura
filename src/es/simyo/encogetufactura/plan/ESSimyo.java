@@ -131,6 +131,10 @@ public abstract class ESSimyo extends ESPlan {
 	}
 
 	public PlanChargeable processDataRxTx(DataRxTx dataRxTx, int dataMBIncluded, boolean chargeExtraMB) {
+		return this.processDataRxTx(dataRxTx, dataMBIncluded, chargeExtraMB, DATARXTX_KB_EXPRA_PRICE);
+	}
+	
+	protected PlanChargeable processDataRxTx(DataRxTx dataRxTx, int dataMBIncluded, boolean chargeExtraMB, double extraPricePerKB) {
 		PlanChargeable planChargeable = null;
 		Double price = null;  // roaming data, not charged for now
 		if (this.getCountryISO().equals(dataRxTx.getCountryWhereChargeWasMade())) {
@@ -139,7 +143,7 @@ public abstract class ESSimyo extends ESPlan {
 				double bytesIncluded = dataMBIncluded * 1024 * 1024;
 				double dataTransferred = dataRxTx.getRx() + dataRxTx.getTx();
 				if (dataTransferred > bytesIncluded) {
-					price = (double) ((int) ((dataTransferred - bytesIncluded) / 1024)) * DATARXTX_KB_EXPRA_PRICE;
+					price = (double) ((int) ((dataTransferred - bytesIncluded) / 1024)) * extraPricePerKB;
 				}
 			}
 		}

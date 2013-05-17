@@ -56,17 +56,17 @@ public class PlanInfoDetailActivity extends SherlockActivity {
         int resid = 0;
         String data =null;
         switch (plan) {
-        case R.id.planinfo_gigaplan:
-        	resid = R.string.planinfo_gigaplan;
-        	data = getString(R.string.planinfo_gigaplan_detail);
+        case R.id.planinfo_pura:
+        	resid = R.string.planinfo_pura;
+        	data = getString(R.string.planinfo_pura_detail);
         	break;
         case R.id.planinfo_5cents:
         	resid = R.string.planinfo_5cents;
         	data = getString(R.string.planinfo_5cents_detail);
         	break;
-        case R.id.planinfo_3cents:
-        	resid = R.string.planinfo_3cents;
-        	data = getString(R.string.planinfo_3cents_detail);
+        case R.id.planinfo_2cents:
+        	resid = R.string.planinfo_2cents;
+        	data = getString(R.string.planinfo_2cents_detail);
         	break;
         case R.id.planinfo_0_6cents:
         	resid = R.string.planinfo_0_6cents;

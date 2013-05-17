@@ -49,11 +49,11 @@ public class PlanInfoActivity extends SherlockActivity {
         ab.setDisplayUseLogoEnabled(true);
         ab.setLogo(R.drawable.simyo);
         
-       	this.findViewById(R.id.planinfo_gigaplan).setOnClickListener(new View.OnClickListener() {
+       	this.findViewById(R.id.planinfo_pura).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 		        Intent intent = new Intent(PlanInfoActivity.this, PlanInfoDetailActivity.class);
 		        Bundle bundle = new Bundle();
-		        bundle.putInt("plan", R.id.planinfo_gigaplan);
+		        bundle.putInt("plan", R.id.planinfo_pura);
 		        intent.putExtras(bundle);
 		        startActivity(intent);
 	        }
@@ -67,11 +67,11 @@ public class PlanInfoActivity extends SherlockActivity {
 		        startActivity(intent);
 	        }
 		});
-       	this.findViewById(R.id.planinfo_3cents).setOnClickListener(new View.OnClickListener() {
+       	this.findViewById(R.id.planinfo_2cents).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 		        Intent intent = new Intent(PlanInfoActivity.this, PlanInfoDetailActivity.class);
 		        Bundle bundle = new Bundle();
-		        bundle.putInt("plan", R.id.planinfo_3cents);
+		        bundle.putInt("plan", R.id.planinfo_2cents);
 		        intent.putExtras(bundle);
 		        startActivity(intent);
 	        }
