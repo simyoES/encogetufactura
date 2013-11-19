@@ -36,13 +36,13 @@
 	</ul>
     ]]>
     </string>
-    <string name="planinfo_5cents">Tarifa 0/5 cent + 750MB</string>
+    <string name="planinfo_5cents">Tarifa 0/5 cent + 850MB</string>
     <string name="planinfo_5cents_detail">
     <![CDATA[
 	<ul>
 		<li class="detalles"><span style="color:#ff5900">0 cent/min (los primeros 10 minutos de cada llamada)</span> entre n&uacute;meros de simyo y <span style="color:#ff5900">5 cent/min</span> llamadas al resto de m&oacute;viles y fijos nacionales</li>
 		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
-		<li class="detalles">Internet M&oacute;vil <span style="color:#ff5900">750MB/mes &iexcl;DE REGALO!</span> (luego a 3cent/MB)</li>
+		<li class="detalles">Internet M&oacute;vil <span style="color:#ff5900">850MB/mes &iexcl;DE REGALO!</span> (luego a 3cent/MB)</li>
 		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
 		<li class="detalles"><span style="color:#ff5900">29 cent/MMS</span> mensaje multimedia nacional</li>
 		<li class="detalles">6,99&euro;/mes de consumo m&iacute;nimo</li>
@@ -51,13 +51,13 @@
 	</ul>
     ]]>
     </string>
-    <string name="planinfo_2cents">Tarifa 2 cent + 600MB</string>
+    <string name="planinfo_2cents">Tarifa 2 cent + 700MB</string>
     <string name="planinfo_2cents_detail">
     <![CDATA[
 	<ul>
 		<li class="detalles"><span style="color:#ff5900">2 cent/min</span> llamadas a m&oacute;viles y fijos nacionales</li>
 		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
-		<li class="detalles"><span style="color:#ff5900">Internet m&oacute;vil Incluido</span> (600MB/mes, luego a 3cent/MB)</li>
+		<li class="detalles"><span style="color:#ff5900">Internet m&oacute;vil Incluido</span> (700MB/mes, luego a 3cent/MB)</li>
 		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
 		<li class="detalles"><span style="color:#ff5900">39 cent/MMS</span> mensaje multimedia nacional</li>
 		<li class="detalles">4,90&euro;/mes de Cuota mensual</li>
@@ -66,13 +66,13 @@
 	</ul>
     ]]>
     </string>
-    <string name="planinfo_0_6cents">Tarifa 0/5 cent + 100MB</string>
+    <string name="planinfo_0_6cents">Tarifa 0/5 cent + 200MB</string>
     <string name="planinfo_0_6cents_detail">
     <![CDATA[
 	<ul>
 		<li class="detalles"><span style="color:#ff5900">0 cent/min (los primeros 10 minutos de cada llamada)</span> entre n&uacute;meros de simyo y <span style="color:#ff5900">5 cent/min</span> llamadas al resto de m&oacute;viles y fijos nacionales</li>
 		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
-		<li class="detalles">Internet M&oacute;vil <span style="color:#ff5900">100MB/mes &iexcl;DE REGALO!</span> (luego a 3cent/MB)</li>
+		<li class="detalles">Internet M&oacute;vil <span style="color:#ff5900">200MB/mes &iexcl;DE REGALO!</span> (luego a 3cent/MB)</li>
 		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
 		<li class="detalles"><span style="color:#ff5900">39 cent/MMS</span> mensaje multimedia nacional</li>
 		<li class="detalles">3,99&euro;/mes de consumo m&iacute;nimo</li>

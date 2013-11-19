@@ -41,10 +41,10 @@ public class ESSimyo2centimos extends ESSimyo {
 	private double initialPrice = 0.15;
 	private double pricePerSecond = 0.02 / 60;
 	private double smsPrice = 0.09;
-	private int dataMBIncluded = 600;
+	private int dataMBIncluded = 700;
     
 	public String getPlanName() {
-		return "Tarifa 2 cent. + 600 MB";
+		return "Tarifa 2 cent. + 700 MB";
 	}
 	
 	public String getPlanURL() {
