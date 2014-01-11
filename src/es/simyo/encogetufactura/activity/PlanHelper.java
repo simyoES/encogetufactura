@@ -40,7 +40,20 @@ public class PlanHelper {
         
         TextView totalAmount = (TextView) view.findViewById(R.id.summary_line_totalamount);
         double vat = 1 + (((double) Settings.getVATValue(context)) / 100);
-		String totalValue = Formatter.formatDecimal(planSummary.getTotalPrice() * vat) + " " + planSummary.getPlan().getCurrency();
+        double totalPrice = planSummary.getTotalPrice();
+		String totalValue = new StringBuilder()
+			.append(Formatter.formatDecimal(totalPrice))
+			.append(" ")
+			.append(planSummary.getPlan().getCurrency())
+			.append(" ")
+			.append(context.getString(R.string.settings_vat_novat))
+			.append(" (")
+			.append(Formatter.formatDecimal(totalPrice * vat))
+			.append(" ")
+			.append(planSummary.getPlan().getCurrency())
+			.append(" ")
+			.append(context.getString(R.string.settings_vat_vat))
+			.toString();
         totalAmount.setText(totalValue);
 	}
 	

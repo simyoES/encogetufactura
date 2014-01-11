@@ -5542,8 +5542,9 @@ es.simyo.encogetufactura.R$string: int settings_taxes
 es.simyo.encogetufactura.R$string: int settings_vat_igic_canarias
 es.simyo.encogetufactura.R$string: int settings_vat_ipsi_ceuta
 es.simyo.encogetufactura.R$string: int settings_vat_ipsi_melilla
-es.simyo.encogetufactura.R$string: int settings_vat_no
+es.simyo.encogetufactura.R$string: int settings_vat_novat
 es.simyo.encogetufactura.R$string: int settings_vat_peninsula_baleares
+es.simyo.encogetufactura.R$string: int settings_vat_vat
 es.simyo.encogetufactura.R$string: int stats_answered_calls
 es.simyo.encogetufactura.R$string: int stats_average_call
 es.simyo.encogetufactura.R$string: int stats_inbound_calls

@@ -58,22 +58,23 @@ public class Settings {
 		}
 		switch (pos) {
 		case 0:
-			return R.string.settings_vat_no;
-		case 1:
 			return R.string.settings_vat_ipsi_melilla;
-		case 2:
+		case 1:
 			return R.string.settings_vat_igic_canarias;
-		case 3:
+		case 2:
 			return R.string.settings_vat_ipsi_ceuta;
-		case 4:
+		case 3:
 			return R.string.settings_vat_peninsula_baleares;
 		default:
-			return R.string.settings_vat_no;
+			return R.string.settings_vat_peninsula_baleares;
 		}
 	}
 
     public static int getVATValue(Context context) {
-    	String vat = PreferenceManager.getDefaultSharedPreferences(context).getString(Setting.VAT.toString(), "0");
+    	String vat = PreferenceManager.getDefaultSharedPreferences(context).getString(Setting.VAT.toString(), "21");
+    	if ("8".equals(vat)) {
+    		setVATValue(context, "10");
+    	}
     	return Integer.valueOf(vat);
     }
 

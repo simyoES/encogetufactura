@@ -30,7 +30,7 @@ public abstract class ESPlan extends AbstractPlan {
 	}
 	
 	public String getCurrency() {
-		return "EUR";
+		return "€";
 	}
 	
 	public PlanConfig getPlanConfig() {

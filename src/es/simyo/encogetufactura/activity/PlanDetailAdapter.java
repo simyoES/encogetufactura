@@ -144,7 +144,19 @@ public class PlanDetailAdapter extends ArrayAdapter<PlanChargeable> {
             Double price = planCall.getPrice();
             String totalValue = null;
             if (price != null) {
-            	totalValue = Formatter.formatDecimal(planCall.getPrice() * vat) + " " + planCall.getCurrency();
+        		totalValue = new StringBuilder()
+        			.append(Formatter.formatDecimal(price))
+        			.append(" ")
+					.append(planCall.getCurrency())
+					.append(" ")
+					.append(context.getString(R.string.settings_vat_novat))
+					.append(" (")
+					.append(Formatter.formatDecimal(price * vat))
+					.append(" ")
+					.append(planCall.getCurrency())
+					.append(" ")
+					.append(context.getString(R.string.settings_vat_vat))
+					.toString();
             } else {
             	totalValue = "-- " + planCall.getCurrency();
             }

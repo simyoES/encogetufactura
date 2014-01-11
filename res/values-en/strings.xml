@@ -19,7 +19,9 @@
     <string name="plan_billingperiod">Billing period:</string>
     <string name="plan_data">Data Consumption</string>
     <string name="plan_type_icon_description">Billed item type icon</string>
-
+    <string name="settings_vat_novat">no VAT.</string>
+    <string name="settings_vat_vat">VAT incl.)</string>
+    
     <string name="planinfo_web">Go to simyo.es</string>
     <string name="planinfo_pura">Tarifa Pura</string>
     <string name="planinfo_pura_detail">
