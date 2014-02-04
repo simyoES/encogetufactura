@@ -44,7 +44,7 @@ public class ESSimyo5centimos extends ESSimyo {
 	private int dataMBIncluded = 850;
     
 	public String getPlanName() {
-		return "Tarifa 0/5 cent. + 850 MB";
+		return "Tarifa Habla + 850 MB";
 	}
 	
 	public String getPlanURL() {

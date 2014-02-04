@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Encoge tu factura</string>
-    <string name="app_version">1.0.9</string>
+    <string name="app_version">1.0.10</string>
 
     <string name="summary_logo_description">Logotipo de Simyo</string>
     <string name="summary_menu_previous_period">Periodo Anterior</string>
@@ -25,59 +25,59 @@
     <string name="planinfo_pura_detail">
     <![CDATA[
 	<ul>
-		<li class="detalles"><span style="color:#ff5900">8 cent/min</span> llamadas a m&oacute;viles y fijos nacionales</li>
+		<li class="detalles"><span style="color:#ff5900">9,68 cent/min</span> llamadas a m&oacute;viles y fijos nacionales</li>
 		<li class="detalles"><span style="color:#ff5900">0 cent</span> establecimiento de llamada</li>
-		<li class="detalles">Internet M&oacute;vil <span style="color:#ff5900">0,8 cent/MB</span></li>
-		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
-		<li class="detalles"><span style="color:#ff5900">39 cent/MMS</span> mensaje multimedia nacional</li>
-		<li class="detalles">9,99&euro;/mes de consumo m&iacute;nimo</li>
+		<li class="detalles">Internet M&oacute;vil <span style="color:#ff5900">0,97 cent/MB</span></li>
+		<li class="detalles"><span style="color:#ff5900">10,89 cent/SMS</span> mensaje de texto nacional</li>
+		<li class="detalles"><span style="color:#ff5900">47,19 cent/MMS</span> mensaje multimedia nacional</li>
+		<li class="detalles">12,09&euro;/mes de consumo m&iacute;nimo</li>
 		<li class="detalles">Sin compromiso de permanencia</li>
-		<li class="detalles">Precios sin IVA</li>
+		<li class="detalles">Precios IVA incluido</li>
 	</ul>
     ]]>
     </string>
-    <string name="planinfo_5cents">Tarifa 0/5 cent + 850MB</string>
+    <string name="planinfo_5cents">Tarifa Habla + 850MB</string>
     <string name="planinfo_5cents_detail">
     <![CDATA[
 	<ul>
 		<li class="detalles">Internet m&oacute;vil de <span style="color:#ff5900">850MB</span></li>
-		<li class="detalles">6,99&euro; de m&iacute;nimo para gastar en llamadas! (a 2 minutos por llamada, con 1/3 de llamadas a simyos, tienes para 60 minutos! 1 hora!)</li>
-		<li class="detalles"><span style="color:#ff5900">0 cent/min (los primeros 10 min de cada llamada)</span> entre n&uacute;meros simyo y <span style="color:#ff5900">5 cent/min</span> llamadas al resto de m&oacute;viles y fijos nacionales</li>
-		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
-		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
-		<li class="detalles"><span style="color:#ff5900">29 cent/MMS</span> mensaje multimedia nacional</li>
+		<li class="detalles">8,46&euro; de m&iacute;nimo para gastar en llamadas! (a 2 minutos por llamada, con 1/3 de llamadas a simyos, tienes para 60 minutos! 1 hora!)</li>
+		<li class="detalles"><span style="color:#ff5900">0 cent/min (los primeros 10 min de cada llamada)</span> entre n&uacute;meros simyo y <span style="color:#ff5900">6,05 cent/min</span> llamadas al resto de m&oacute;viles y fijos nacionales</li>
+		<li class="detalles"><span style="color:#ff5900">18,15 cent</span> establecimiento de llamada</li>
+		<li class="detalles"><span style="color:#ff5900">10,89 cent/SMS</span> mensaje de texto nacional</li>
+		<li class="detalles"><span style="color:#ff5900">35,09 cent/MMS</span> mensaje multimedia nacional</li>
 		<li class="detalles">Sin compromiso de permanencia</li>
-		<li class="detalles">Precios sin IVA</li>
+		<li class="detalles">Precios IVA incluido</li>
 	</ul>
     ]]>
     </string>
-    <string name="planinfo_2cents">Tarifa 2 cent + 700MB</string>
+    <string name="planinfo_2cents">Tarifa Habla + 700MB</string>
     <string name="planinfo_2cents_detail">
     <![CDATA[
 	<ul>
-		<li class="detalles"><span style="color:#ff5900">2 cent/min</span> llamadas a m&oacute;viles y fijos nacionales</li>
-		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
-		<li class="detalles"><span style="color:#ff5900">Internet m&oacute;vil Incluido</span> (700MB/mes, luego a 3cent/MB)</li>
-		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
-		<li class="detalles"><span style="color:#ff5900">39 cent/MMS</span> mensaje multimedia nacional</li>
-		<li class="detalles">4,90&euro;/mes de Cuota mensual</li>
+		<li class="detalles"><span style="color:#ff5900">4,83 cent/min</span> llamadas a m&oacute;viles y fijos nacionales</li>
+		<li class="detalles"><span style="color:#ff5900">18,15 cent</span> establecimiento de llamada</li>
+		<li class="detalles"><span style="color:#ff5900">Internet m&oacute;vil Incluido</span> (700MB/mes, luego a 3,63cent/MB)</li>
+		<li class="detalles"><span style="color:#ff5900">10,89 cent/SMS</span> mensaje de texto nacional</li>
+		<li class="detalles"><span style="color:#ff5900">47,19 cent/MMS</span> mensaje multimedia nacional</li>
+		<li class="detalles">5,93&euro;/mes de Cuota mensual</li>
 		<li class="detalles">Sin compromiso de permanencia</li>
-		<li class="detalles">Precios sin IVA</li>
+		<li class="detalles">Precios IVA incluido</li>
 	</ul>
     ]]>
     </string>
-    <string name="planinfo_0_6cents">Tarifa 0/5 cent + 200MB</string>
+    <string name="planinfo_0_6cents">Tarifa Habla + 200MB</string>
     <string name="planinfo_0_6cents_detail">
     <![CDATA[
 	<ul>
 		<li class="detalles">Internet m&oacute;vil de <span style="color:#ff5900">200MB</span></li>
-		<li class="detalles">3,99&euro; de m&iacute;nimo para gastar en llamadas! (a 2 minutos por llamada, con 1/3 de llamadas a simyos, tienes para 35 minutos!)</li>
-		<li class="detalles"><span style="color:#ff5900">0 cent/min (los primeros 10 minutos de cada llamada)</span> entre n&uacute;meros de simyo y <span style="color:#ff5900">5 cent/min</span> llamadas al resto de m&oacute;viles y fijos nacionales</li>
-		<li class="detalles"><span style="color:#ff5900">15 cent</span> establecimiento de llamada</li>
-		<li class="detalles"><span style="color:#ff5900">9 cent/SMS</span> mensaje de texto nacional</li>
-		<li class="detalles"><span style="color:#ff5900">39 cent/MMS</span> mensaje multimedia nacional</li>
+		<li class="detalles">4,83&euro; de m&iacute;nimo para gastar en llamadas! (a 2 minutos por llamada, con 1/3 de llamadas a simyos, tienes para 35 minutos!)</li>
+		<li class="detalles"><span style="color:#ff5900">0 cent/min (los primeros 10 minutos de cada llamada)</span> entre n&uacute;meros de simyo y <span style="color:#ff5900">6,05 cent/min</span> llamadas al resto de m&oacute;viles y fijos nacionales</li>
+		<li class="detalles"><span style="color:#ff5900">18,15 cent</span> establecimiento de llamada</li>
+		<li class="detalles"><span style="color:#ff5900">10,89 cent/SMS</span> mensaje de texto nacional</li>
+		<li class="detalles"><span style="color:#ff5900">47,19 cent/MMS</span> mensaje multimedia nacional</li>
 		<li class="detalles">Sin compromiso de permanencia</li>
-		<li class="detalles">Precios sin IVA</li>
+		<li class="detalles">Precios IVA incluido</li>
 	</ul>
     ]]>
     </string>
@@ -103,8 +103,7 @@
         <item>10</item>
         <item>21</item>
     </string-array>
-    <string name="settings_vat_novat">sin imp. (</string>
-    <string name="settings_vat_vat">IVA incl.)</string>
+    <string name="settings_vat_vat">IVA incluido</string>
     
     <string name="stats_title">Estadísticas historial</string>
     <string name="stats_missed_calls">Llamadas perdidas</string>

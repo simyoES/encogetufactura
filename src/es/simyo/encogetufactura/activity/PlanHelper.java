@@ -42,17 +42,12 @@ public class PlanHelper {
         double vat = 1 + (((double) Settings.getVATValue(context)) / 100);
         double totalPrice = planSummary.getTotalPrice();
 		String totalValue = new StringBuilder()
-			.append(Formatter.formatDecimal(totalPrice))
-			.append(" ")
-			.append(planSummary.getPlan().getCurrency())
-			.append(" ")
-			.append(context.getString(R.string.settings_vat_novat))
-			.append(" (")
 			.append(Formatter.formatDecimal(totalPrice * vat))
 			.append(" ")
 			.append(planSummary.getPlan().getCurrency())
-			.append(" ")
+			.append(" (")
 			.append(context.getString(R.string.settings_vat_vat))
+			.append(")")
 			.toString();
         totalAmount.setText(totalValue);
 	}
