@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Encoge tu factura</string>
-    <string name="app_version">1.0.10</string>
+    <string name="app_version">1.0.11</string>
 
     <string name="summary_logo_description">Logotipo de Simyo</string>
     <string name="summary_menu_previous_period">Periodo Anterior</string>
@@ -36,11 +36,11 @@
 	</ul>
     ]]>
     </string>
-    <string name="planinfo_5cents">Tarifa Habla + 850MB</string>
+    <string name="planinfo_5cents">Tarifa Habla + 1GB</string>
     <string name="planinfo_5cents_detail">
     <![CDATA[
 	<ul>
-		<li class="detalles">Internet m&oacute;vil de <span style="color:#ff5900">850MB</span></li>
+		<li class="detalles">Internet m&oacute;vil de <span style="color:#ff5900">1GB</span></li>
 		<li class="detalles">8,46&euro; de m&iacute;nimo para gastar en llamadas! (a 2 minutos por llamada, con 1/3 de llamadas a simyos, tienes para 60 minutos! 1 hora!)</li>
 		<li class="detalles"><span style="color:#ff5900">0 cent/min (los primeros 10 min de cada llamada)</span> entre n&uacute;meros simyo y <span style="color:#ff5900">6,05 cent/min</span> llamadas al resto de m&oacute;viles y fijos nacionales</li>
 		<li class="detalles"><span style="color:#ff5900">18,15 cent</span> establecimiento de llamada</li>
