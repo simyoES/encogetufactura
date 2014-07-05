@@ -27,10 +27,27 @@
 	        android:layout_marginBottom="5dp"/>
 	</LinearLayout>
 	
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+	    <Button android:id="@+id/summary_call_button"
+	            style="@style/customButton"
+	            android:background="@drawable/gradient_orange"
+	            android:drawableLeft="@drawable/ic_device_access_call"
+	            android:text="@string/summary_call"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"/>
+	</LinearLayout>	
+    
     <WebView android:id="@+id/appdetail_webview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@id/appdetail_title"/>
+        android:layout_below="@id/appdetail_title"
+        android:layout_above="@id/buttons"/>
     
 	
 </RelativeLayout>

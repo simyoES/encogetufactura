@@ -28,25 +28,26 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockListActivity;
+import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.conzebit.myplan.android.store.LogStoreService;
 import com.conzebit.myplan.android.util.Settings;
+import com.conzebit.myplan.core.plan.PlanChargeable;
 import com.conzebit.myplan.core.plan.PlanService;
 import com.conzebit.myplan.core.plan.PlanSummary;
 import com.conzebit.util.AndroidUtils;
+import com.conzebit.util.Formatter;
 
 import es.simyo.encogetufactura.EncogeTuFacturaApp;
 import es.simyo.encogetufactura.R;
 import es.simyo.encogetufactura.receiver.NetworkReceiver;
 
-public class PlanSummaryActivity extends SherlockListActivity {
+public class PlanSummaryActivity extends SherlockActivity {
 	
 	private boolean nextBillingPeriodEnabled = false;
 	private boolean showTermsAndConditions = false;
@@ -76,7 +77,7 @@ public class PlanSummaryActivity extends SherlockListActivity {
 			case R.id.menu_share:
 				Intent shareIntent = new Intent(Intent.ACTION_SEND);
 			    shareIntent.setType("text/plain");
-			    shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Encoge tu factura con simyo");  
+			    shareIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Paga lo Justo con Simyo");  
 			    shareIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=es.simyo.encogetufactura");
 			    startActivity(shareIntent);
 			default:
@@ -84,7 +85,6 @@ public class PlanSummaryActivity extends SherlockListActivity {
 		}
 		return true;
     }
-
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -107,9 +107,7 @@ public class PlanSummaryActivity extends SherlockListActivity {
         	button.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View v) {
 		        	Settings.setTermsShown(v.getContext(), "yes");
-		        	Intent intent = getIntent();
-		        	finish();
-		        	startActivity(intent);
+		        	PlanSummaryActivity.this.startActivity(new Intent(PlanSummaryActivity.this, SettingsActivity.class).putExtra("showbuttons", true));
 		        }
 			});
         } else {
@@ -131,7 +129,6 @@ public class PlanSummaryActivity extends SherlockListActivity {
     	NetworkReceiver.schedule(this);
     	
         super.setContentView(R.layout.summary);
-        this.getListView().setCacheColorHint(0);
         ActionBar ab = getSupportActionBar();
         ab.setHomeButtonEnabled(false);
         ab.setDisplayShowTitleEnabled(false);
@@ -141,16 +138,6 @@ public class PlanSummaryActivity extends SherlockListActivity {
 		this.findViewById(R.id.summary_call_button).setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				AndroidUtils.callPhone(PlanSummaryActivity.this, EncogeTuFacturaApp.CALL_NUMBER);
-			}
-		});
-		this.findViewById(R.id.appdetail_button).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(PlanSummaryActivity.this, AppDetailActivity.class));
-			}
-		});
-		this.findViewById(R.id.summary_plan_detail_button).setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				startActivity(new Intent(PlanSummaryActivity.this, PlanInfoActivity.class));
 			}
 		});
 		
@@ -179,23 +166,9 @@ public class PlanSummaryActivity extends SherlockListActivity {
 		        loadMyPlanData();
 			}
 		});
-
-		
 		
         loadMyPlanData();
     }
-
-	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-        Intent intent = new Intent(this, PlanDetailActivity.class);
-        Bundle bundle = new Bundle();
-        PlanSummary planSummary = (PlanSummary) getListAdapter().getItem(position);
-        bundle.putString("operator", planSummary.getPlan().getOperator());
-        bundle.putString("planname", planSummary.getPlan().getPlanName());
-        bundle.putInt("planresourceid", planSummary.getPlan().getPlanResourceID());
-        intent.putExtras(bundle);
-        startActivity(intent);
-	}
 
     private void loadMyPlanData() {
 		new LoadDataTask().execute();
@@ -243,9 +216,33 @@ public class PlanSummaryActivity extends SherlockListActivity {
 			} catch (Exception e) {
 				Log.e("simyo", "error", e);
 			}
-			PlanSummaryAdapter summaryAdapter = new PlanSummaryAdapter(PlanSummaryActivity.this, 0, planSummaries);
-			setListAdapter(summaryAdapter);
+			PlanSummary ps = planSummaries.get(0); // just one ;)
+			ArrayList<PlanChargeable> chargeableList = ps.getPlanCalls();
+			Integer minutes = chargeableList.get(0).getPrice().intValue();
+			Integer mb = chargeableList.get(1).getPrice().intValue();
+			Double price = chargeableList.get(2).getPrice();
+	        double vat = 1 + (((double) Settings.getVATValue(PlanSummaryActivity.this)) / 100);
+	        Integer monthlyFee = Settings.getMonthlyFee(PlanSummaryActivity.this);
+
+			StringBuilder content = new StringBuilder();
+
+			content.append("<html><body><p align=\"center\"><b>");
+			content.append("Crea <span style=\"color:#ff5900\">tu Tarifa").append("<br/><br/>");
+			content.append(minutes).append("MIN + ").append(mb >= 1024?(mb/1024) + "GB":mb + "MB").append("<br/><br/>");
+			content.append("por<br/><br/>");
+			content.append("</span><span align=\"center\" style=\"color:#ff5900;font-size:250%\">").append(Formatter.formatDecimal(price * vat)).append("</span><span style=\"color:#ff5900\">&euro;/mes</span>").append("<br/>");
+			content.append("</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"font-size:40%\">(").append(PlanSummaryActivity.this.getString(R.string.settings_vat_vat)).append(")</span>").append("<br/><br/>");
+			if (monthlyFee != null && (minutes > 0 || mb > 0)) {
+				int savings = (int) ((monthlyFee.doubleValue() - (price * vat)) * 12);
+				if (savings > 0) {
+					content.append("<b>¡Ah&oacute;rrate unos").append("<br/>");
+					content.append("<span style=\"color:#ff5900\">").append(savings).append("&euro; al a&ntilde;o!</span></b>");
+				}
+			}
+			content.append("</p></body></html>");
+			
+			WebView webView = (WebView) PlanSummaryActivity.this.findViewById(R.id.summary_webview);
+	        webView.loadDataWithBaseURL(null, content.toString(), "text/html", "UTF-8", null);
 		}
 	}
-    
 }

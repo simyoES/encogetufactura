@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/settingstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/settings_text"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"/>
+    
+	<LinearLayout
+	    android:id="@+id/buttonbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/skip_button"
+            style="@style/customButton"
+	        android:background="@drawable/gradient_orange"
+	        android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/settings_skip"/>
+        <Button
+            android:id="@+id/continue_button"
+            style="@style/customButton"
+	        android:background="@drawable/gradient_orange"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/settings_continue"/>
+    </LinearLayout>
+    
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonbar"
+        android:layout_below="@id/settingstext"
+        />
+
+ </RelativeLayout>

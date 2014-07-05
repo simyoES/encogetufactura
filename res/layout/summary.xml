@@ -55,31 +55,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
 
-	    <Button android:id="@+id/summary_call_button"
-	            style="@style/customButton"
-	            android:background="@drawable/gradient_orange"
-	            android:drawableLeft="@drawable/ic_device_access_call"
-	            android:text="@string/summary_call"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"/>
-	    <Button android:id="@+id/appdetail_button"
-	            style="@style/customButton"
-	            android:background="@drawable/gradient_orange"
-	            android:drawableLeft="@drawable/ic_euro"
-	            android:text="@string/appdetail_title"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"/>
-	    <Button android:id="@+id/summary_plan_detail_button"
-	            style="@style/customButton"
-	            android:background="@drawable/gradient_orange"
-	            android:drawableLeft="@drawable/ic_action_about"
-	            android:text="@string/summary_plan_detail"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"/>
-
+	    <Button
+	        android:id="@+id/summary_call_button"
+	        style="@style/customButton"
+	        android:background="@drawable/gradient_orange"
+	        android:drawableLeft="@drawable/ic_device_access_call"
+	        android:text="@string/summary_call"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"/>
 	</LinearLayout>
 	
-    <ListView android:id="@id/android:list"
+    <WebView android:id="@+id/summary_webview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/billing"

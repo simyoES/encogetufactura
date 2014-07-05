@@ -123,6 +123,6 @@ public class Formatter {
 	}
 	
 	public static String formatDecimal(double value) {
-		return decimalFormat.format(value);
+		return decimalFormat.format(value).replace('.', ',');
 	}
 }

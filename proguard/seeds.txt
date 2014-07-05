@@ -5370,6 +5370,8 @@ es.simyo.encogetufactura.R$drawable: int social_facebook
 es.simyo.encogetufactura.R$drawable: int social_gplus
 es.simyo.encogetufactura.R$drawable: int social_simyo
 es.simyo.encogetufactura.R$drawable: int social_twitter
+es.simyo.encogetufactura.R$drawable: int splash02
+es.simyo.encogetufactura.R$drawable: int splash03
 es.simyo.encogetufactura.R$drawable: int square_direction_left
 es.simyo.encogetufactura.R$drawable: int square_direction_left_disabled
 es.simyo.encogetufactura.R$drawable: int square_direction_right
@@ -5405,59 +5407,34 @@ es.simyo.encogetufactura.R$id: int abs__textButton
 es.simyo.encogetufactura.R$id: int abs__title
 es.simyo.encogetufactura.R$id: int abs__titleDivider
 es.simyo.encogetufactura.R$id: int abs__up
-es.simyo.encogetufactura.R$id: int appdetail_button
 es.simyo.encogetufactura.R$id: int appdetail_title
 es.simyo.encogetufactura.R$id: int appdetail_webview
 es.simyo.encogetufactura.R$id: int billing
 es.simyo.encogetufactura.R$id: int billing_period
 es.simyo.encogetufactura.R$id: int billing_period_next
 es.simyo.encogetufactura.R$id: int billing_period_previous
-es.simyo.encogetufactura.R$id: int billingperiod
+es.simyo.encogetufactura.R$id: int buttonbar
 es.simyo.encogetufactura.R$id: int buttons
-es.simyo.encogetufactura.R$id: int detail_line_contactname
-es.simyo.encogetufactura.R$id: int detail_line_dateandduration
-es.simyo.encogetufactura.R$id: int detail_line_msisdn
-es.simyo.encogetufactura.R$id: int detail_line_operatorlogo
-es.simyo.encogetufactura.R$id: int detail_line_title
-es.simyo.encogetufactura.R$id: int detail_line_totalamount
-es.simyo.encogetufactura.R$id: int detail_summary
+es.simyo.encogetufactura.R$id: int continue_button
 es.simyo.encogetufactura.R$id: int disableHome
 es.simyo.encogetufactura.R$id: int disclaimer_ok_button
 es.simyo.encogetufactura.R$id: int encoge_tu_factura
-es.simyo.encogetufactura.R$id: int header
 es.simyo.encogetufactura.R$id: int homeAsUp
 es.simyo.encogetufactura.R$id: int listMode
 es.simyo.encogetufactura.R$id: int menu_settings
 es.simyo.encogetufactura.R$id: int menu_share
 es.simyo.encogetufactura.R$id: int menu_stats
 es.simyo.encogetufactura.R$id: int normal
-es.simyo.encogetufactura.R$id: int planinfo_0_6cents
-es.simyo.encogetufactura.R$id: int planinfo_2cents
-es.simyo.encogetufactura.R$id: int planinfo_5cents
-es.simyo.encogetufactura.R$id: int planinfo_detail_buttons
-es.simyo.encogetufactura.R$id: int planinfo_detail_call
-es.simyo.encogetufactura.R$id: int planinfo_detail_planname
-es.simyo.encogetufactura.R$id: int planinfo_detail_title
-es.simyo.encogetufactura.R$id: int planinfo_detail_web
-es.simyo.encogetufactura.R$id: int planinfo_detail_webview
-es.simyo.encogetufactura.R$id: int planinfo_pura
-es.simyo.encogetufactura.R$id: int planinfo_social_facebook
-es.simyo.encogetufactura.R$id: int planinfo_social_gplus
-es.simyo.encogetufactura.R$id: int planinfo_social_simyo
-es.simyo.encogetufactura.R$id: int planinfo_social_twitter
-es.simyo.encogetufactura.R$id: int planinfo_web
-es.simyo.encogetufactura.R$id: int purchase
+es.simyo.encogetufactura.R$id: int settingstext
 es.simyo.encogetufactura.R$id: int showCustom
 es.simyo.encogetufactura.R$id: int showHome
 es.simyo.encogetufactura.R$id: int showTitle
+es.simyo.encogetufactura.R$id: int skip_button
 es.simyo.encogetufactura.R$id: int statistics_name
 es.simyo.encogetufactura.R$id: int statistics_value
 es.simyo.encogetufactura.R$id: int summary_call_button
 es.simyo.encogetufactura.R$id: int summary_line_arrow
-es.simyo.encogetufactura.R$id: int summary_line_moreinfo
-es.simyo.encogetufactura.R$id: int summary_line_planname
-es.simyo.encogetufactura.R$id: int summary_line_totalamount
-es.simyo.encogetufactura.R$id: int summary_plan_detail_button
+es.simyo.encogetufactura.R$id: int summary_webview
 es.simyo.encogetufactura.R$id: int tabMode
 es.simyo.encogetufactura.R$id: int terms_and_conditions_scroll
 es.simyo.encogetufactura.R$id: int terms_and_conditions_text
@@ -5485,12 +5462,7 @@ es.simyo.encogetufactura.R$layout: int abs__screen_action_bar_overlay
 es.simyo.encogetufactura.R$layout: int abs__screen_simple
 es.simyo.encogetufactura.R$layout: int abs__screen_simple_overlay_action_mode
 es.simyo.encogetufactura.R$layout: int app_detail
-es.simyo.encogetufactura.R$layout: int detail
-es.simyo.encogetufactura.R$layout: int detail_header
-es.simyo.encogetufactura.R$layout: int detail_line
-es.simyo.encogetufactura.R$layout: int detail_title
-es.simyo.encogetufactura.R$layout: int planinfo
-es.simyo.encogetufactura.R$layout: int planinfo_detail
+es.simyo.encogetufactura.R$layout: int settings
 es.simyo.encogetufactura.R$layout: int sherlock_spinner_dropdown_item
 es.simyo.encogetufactura.R$layout: int sherlock_spinner_item
 es.simyo.encogetufactura.R$layout: int splash
@@ -5498,7 +5470,6 @@ es.simyo.encogetufactura.R$layout: int statistics
 es.simyo.encogetufactura.R$layout: int statistics_line
 es.simyo.encogetufactura.R$layout: int statistics_line_arrow
 es.simyo.encogetufactura.R$layout: int summary
-es.simyo.encogetufactura.R$layout: int summary_line
 es.simyo.encogetufactura.R$layout: int terms_and_conditions
 es.simyo.encogetufactura.R$menu: int summary_menu
 es.simyo.encogetufactura.R$string: int abs__action_bar_home_description
@@ -5526,19 +5497,13 @@ es.simyo.encogetufactura.R$string: int plan_minimum_month_fee
 es.simyo.encogetufactura.R$string: int plan_month_fee
 es.simyo.encogetufactura.R$string: int plan_registered_calls_sms
 es.simyo.encogetufactura.R$string: int plan_type_icon_description
-es.simyo.encogetufactura.R$string: int planinfo_0_6cents
-es.simyo.encogetufactura.R$string: int planinfo_0_6cents_detail
-es.simyo.encogetufactura.R$string: int planinfo_2cents
-es.simyo.encogetufactura.R$string: int planinfo_2cents_detail
-es.simyo.encogetufactura.R$string: int planinfo_5cents
-es.simyo.encogetufactura.R$string: int planinfo_5cents_detail
-es.simyo.encogetufactura.R$string: int planinfo_detail_call
-es.simyo.encogetufactura.R$string: int planinfo_detail_web
-es.simyo.encogetufactura.R$string: int planinfo_pura
-es.simyo.encogetufactura.R$string: int planinfo_pura_detail
-es.simyo.encogetufactura.R$string: int planinfo_web
 es.simyo.encogetufactura.R$string: int settings_billingday
+es.simyo.encogetufactura.R$string: int settings_continue
+es.simyo.encogetufactura.R$string: int settings_monthly_fee
+es.simyo.encogetufactura.R$string: int settings_more_info
+es.simyo.encogetufactura.R$string: int settings_skip
 es.simyo.encogetufactura.R$string: int settings_taxes
+es.simyo.encogetufactura.R$string: int settings_text
 es.simyo.encogetufactura.R$string: int settings_vat_igic_canarias
 es.simyo.encogetufactura.R$string: int settings_vat_ipsi_ceuta
 es.simyo.encogetufactura.R$string: int settings_vat_ipsi_melilla
@@ -5788,12 +5753,6 @@ es.simyo.encogetufactura.R$styleable: int SherlockTheme_windowNoTitle
 es.simyo.encogetufactura.R$styleable: int SherlockTheme_windowSplitActionBar
 es.simyo.encogetufactura.activity.AppDetailActivity
 es.simyo.encogetufactura.activity.AppDetailActivity: AppDetailActivity()
-es.simyo.encogetufactura.activity.PlanDetailActivity
-es.simyo.encogetufactura.activity.PlanDetailActivity: PlanDetailActivity()
-es.simyo.encogetufactura.activity.PlanInfoActivity
-es.simyo.encogetufactura.activity.PlanInfoActivity: PlanInfoActivity()
-es.simyo.encogetufactura.activity.PlanInfoDetailActivity
-es.simyo.encogetufactura.activity.PlanInfoDetailActivity: PlanInfoDetailActivity()
 es.simyo.encogetufactura.activity.PlanSummaryActivity
 es.simyo.encogetufactura.activity.PlanSummaryActivity: PlanSummaryActivity()
 es.simyo.encogetufactura.activity.SettingsActivity

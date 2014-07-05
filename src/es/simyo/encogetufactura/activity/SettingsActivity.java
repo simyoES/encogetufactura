@@ -16,11 +16,14 @@
  */
 package es.simyo.encogetufactura.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
+import android.view.View;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
@@ -45,14 +48,30 @@ public class SettingsActivity extends SherlockPreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActionBar ab = getSupportActionBar();
-        ab.setDisplayHomeAsUpEnabled(true);
         ab.setDisplayUseLogoEnabled(true);
         ab.setDisplayShowTitleEnabled(false);
         ab.setLogo(R.drawable.simyo);
-        super.setPreferenceScreen(createPreferenceHierarchy());
+        
+        Bundle bundle = getIntent().getExtras();
+        boolean showButtons = bundle != null && bundle.getBoolean("showbuttons", false);
+        ab.setDisplayHomeAsUpEnabled(!showButtons);
+        if (showButtons) {
+        	this.setContentView(R.layout.settings);
+            this.findViewById(R.id.skip_button).setOnClickListener(new View.OnClickListener() {
+    			public void onClick(View v) {
+    				SettingsActivity.this.startActivity(new Intent(SettingsActivity.this, PlanSummaryActivity.class));
+    			}
+    		});
+            this.findViewById(R.id.continue_button).setOnClickListener(new View.OnClickListener() {
+    			public void onClick(View v) {
+    				SettingsActivity.this.startActivity(new Intent(SettingsActivity.this, PlanSummaryActivity.class));
+    			}
+    		});
+        }
+        super.setPreferenceScreen(createPreferenceHierarchy(showButtons));
     }
 
-    private PreferenceScreen createPreferenceHierarchy() {
+    private PreferenceScreen createPreferenceHierarchy(boolean showButtons) {
     	
         // Root
         PreferenceScreen root = getPreferenceManager().createPreferenceScreen(this);
@@ -94,6 +113,43 @@ public class SettingsActivity extends SherlockPreferenceActivity {
         });
         root.addPreference(vatPref);
         
+        final EditTextPreference monthlyFee = new EditTextPreference(this);
+        monthlyFee.setTitle(R.string.settings_monthly_fee);
+        Integer monthlyFeeValue = Settings.getMonthlyFee(this);
+        if (monthlyFeeValue != null) {
+        	monthlyFee.setSummary(String.valueOf(monthlyFeeValue));
+        }
+       	monthlyFee.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+		  	public boolean onPreferenceChange(Preference preference, Object newValue) {
+		  		Integer value = null;
+		  		try {
+		  			value = Integer.valueOf(newValue.toString());
+		  		} catch (Exception e) {
+		  		}
+		  		Settings.setMontlyFee(SettingsActivity.this, value);
+		        if (value != null) {
+		        	monthlyFee.setSummary(String.valueOf(value));
+		        } else {
+		        	monthlyFee.setSummary("");
+		        }
+				return true;
+			}
+        });
+        root.addPreference(monthlyFee);
+        
+        if (!showButtons) {
+	        final Preference button = new Preference(this);
+	        button.setTitle(R.string.settings_more_info);
+	        button.setKey("button");
+	        button.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+	            @Override
+	            public boolean onPreferenceClick(Preference pref) { 
+					startActivity(new Intent(SettingsActivity.this, AppDetailActivity.class));
+	                return false;
+	            }
+	        });
+	        root.addPreference(button);
+        }
         
         return root;
     }

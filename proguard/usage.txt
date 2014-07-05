@@ -269,7 +269,7 @@ com.conzebit.myplan.android.store.MyPlanDBHelper:
     private static final long GPRS_MIN_DIFF
     private static final java.lang.String GPRS_SELECT_ALL
     112:127:public java.lang.String getCountryForDate(long,java.lang.String)
-    241:270:public java.lang.String getAll()
+    245:274:public java.lang.String getAll()
 com.conzebit.myplan.android.store.MyPlanDBHelper$DataInterval
 com.conzebit.myplan.android.store.SMSLogStore:
     public static final int MESSAGE_TYPE_INBOX
@@ -306,9 +306,7 @@ com.conzebit.myplan.android.store.data.SysClassNet:
     public static final java.lang.String TX_BYTES
     48:49:private SysClassNet()
     57:59:public static boolean isUp(java.lang.String)
-com.conzebit.myplan.android.util.AndroidResourcesUtil:
-    22:22:public AndroidResourcesUtil()
-    41:41:public static int getOperatorResourceImage(java.lang.String)
+com.conzebit.myplan.android.util.AndroidResourcesUtil
 com.conzebit.myplan.android.util.Settings:
     27:27:public Settings()
 com.conzebit.myplan.core.Chargeable:
@@ -316,6 +314,7 @@ com.conzebit.myplan.core.Chargeable:
     public static final int CHARGEABLE_TYPE_SMS
     public static final int CHARGEABLE_TYPE_MESSAGE
     public static final int CHARGEABLE_TYPE_DATARXTX
+    40:40:public java.util.Calendar getDate()
 com.conzebit.myplan.core.call.Call:
     public static final int CALL_TYPE_RECEIVED
     public static final int CALL_TYPE_RECEIVED_MISSED
@@ -324,10 +323,14 @@ com.conzebit.myplan.core.call.Call:
 com.conzebit.myplan.core.contact.Contact:
     68:68:public java.lang.String getNSN()
     72:73:public void setMsisdnType(com.conzebit.myplan.core.msisdn.MsisdnType)
+com.conzebit.myplan.core.datarxtx.DataRxTx:
+    40:40:public java.util.Date getFrom()
+    48:48:public java.util.Date getTo()
 com.conzebit.myplan.core.message.ChargeableMessage:
     public static final java.lang.String MESSAGE_MONTH_FEE
     public static final java.lang.String MESSAGE_MINIMUM_MONTH_FEE
     public static final java.lang.String MESSAGE_REGISTERED_CALLS_SMS
+    34:34:public java.lang.String getMessage()
 com.conzebit.myplan.core.msisdn.IMsisdnTypeStore:
     public abstract void setMsisdnType(java.lang.String,com.conzebit.myplan.core.msisdn.MsisdnType)
 com.conzebit.myplan.core.msisdn.MsisdnType:
@@ -338,9 +341,13 @@ com.conzebit.myplan.core.msisdn.MsisdnTypeService:
 com.conzebit.myplan.core.plan.AbstractPlan:
     public abstract java.lang.String getCountryISO()
     public abstract java.lang.String getCountry()
+    public abstract java.lang.String getScreenPlanName()
     public abstract java.lang.String getPlanURL()
+    public abstract int getPlanResourceID()
     public abstract boolean hasInternetFee()
 com.conzebit.myplan.core.plan.PlanChargeable:
+    45:45:public com.conzebit.myplan.core.Chargeable getChargeable()
+    53:53:public java.lang.String getCurrency()
     57:57:public com.conzebit.myplan.core.plan.PlanChargeable$Type getType()
 com.conzebit.myplan.core.plan.PlanConfig:
     27:29:public PlanConfig()
@@ -356,19 +363,19 @@ com.conzebit.myplan.core.plan.PlanConfigElement:
     48:48:public java.lang.Object getMinValue()
     52:52:public java.lang.Object getMaxValue()
     56:56:public java.lang.String getTName()
-com.conzebit.myplan.core.plan.PlanImpl:
-    35:35:public java.lang.String getCountryISO()
-    39:39:public java.lang.String getCountry()
-    59:59:public java.lang.String getPlanURL()
-    71:71:public boolean hasInternetFee()
+com.conzebit.myplan.core.plan.PlanImpl
+com.conzebit.myplan.core.plan.PlanOperator:
+    42:45:public com.conzebit.myplan.core.plan.PlanSummary getPlanSummary(java.lang.String)
 com.conzebit.myplan.core.plan.PlanService:
-    69:75:public com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList,java.lang.String,java.lang.String)
-    80:91:public void updateMisdnTypeAndProcess(java.lang.String,com.conzebit.myplan.core.msisdn.MsisdnType)
-    115:120:public java.lang.String[] getOperatorsAsStringArray()
-    145:150:public com.conzebit.myplan.core.plan.PlanConfig getPlanConfig(java.lang.String,java.lang.String)
-    163:163:public java.util.ArrayList getPlans()
-    167:171:public java.lang.String[] getPlansAsStringArray()
-    175:186:public java.lang.String[] getPlansAsStringArray(java.lang.String)
+    62:68:public com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList,java.lang.String,java.lang.String)
+    73:84:public void updateMisdnTypeAndProcess(java.lang.String,com.conzebit.myplan.core.msisdn.MsisdnType)
+    108:113:public java.lang.String[] getOperatorsAsStringArray()
+    138:143:public com.conzebit.myplan.core.plan.PlanConfig getPlanConfig(java.lang.String,java.lang.String)
+    147:147:public com.conzebit.myplan.core.plan.PlanSummary getPlanSummary(java.lang.String,java.lang.String)
+    152:152:public java.util.ArrayList getPlanCalls(java.lang.String,java.lang.String)
+    156:156:public java.util.ArrayList getPlans()
+    160:164:public java.lang.String[] getPlansAsStringArray()
+    168:179:public java.lang.String[] getPlansAsStringArray(java.lang.String)
 com.conzebit.myplan.core.sms.Sms:
     public static final int SMS_TYPE_SENT
     public static final int SMS_TYPE_RECEIVED
@@ -376,6 +383,7 @@ com.conzebit.myplan.ext.es.ESMsisdnTypeValidator:
     private static final java.lang.String COUNTRY_CODE
 com.conzebit.myplan.ext.es.ESPlan:
     29:29:public java.lang.String getCountry()
+    41:41:public java.lang.String getScreenPlanName()
     45:45:public boolean hasInternetFee()
 com.conzebit.util.AndroidUtils:
     private static final java.lang.String TAG
@@ -385,6 +393,7 @@ com.conzebit.util.AndroidUtils:
     64:73:public static java.lang.String getAppFullVersion(android.content.Context)
     77:79:public static void forceHideKeyboard(android.content.Context,android.os.IBinder)
     82:87:public static java.lang.String getIMEI(android.content.Context)
+    97:99:public static void openURL(android.content.Context,java.lang.String)
     102:119:public static boolean sendMail(android.content.Context,java.lang.String,java.lang.String,java.lang.String)
     123:132:public static boolean showMap(android.content.Context,java.lang.String)
     136:139:public static void installRemoteAPK(android.content.Context,java.lang.String)
@@ -398,11 +407,13 @@ com.conzebit.util.Formatter:
     66:66:public static java.lang.String formatFullMonthTextDate(java.util.Calendar)
     70:70:public static java.lang.String formatDateMonthYear(java.util.Date)
     114:118:public static java.lang.String formatBytesToKbMbGbTb(long)
+    122:122:public static java.lang.String formatBytesToMb(double)
 com.conzebit.util.MathUtils
 com.conzebit.util.MsisdnUtil:
     22:22:public MsisdnUtil()
 com.conzebit.util.StringUtil:
     19:19:public StringUtil()
+    35:35:public static boolean isNotBlank(java.lang.String)
     39:42:public static java.lang.String trim(java.lang.String)
     47:50:public static java.lang.String toLowerCase(java.lang.String)
     55:65:public static boolean equals(java.lang.CharSequence,java.lang.CharSequence)
@@ -625,7 +636,7 @@ es.simyo.encogetufactura.R$string
 es.simyo.encogetufactura.R$style
 es.simyo.encogetufactura.R$styleable
 es.simyo.encogetufactura.activity.PlanHelper:
-    31:31:public PlanHelper()
+    25:25:public PlanHelper()
 es.simyo.encogetufactura.activity.StatisticsHelper:
     37:37:public StatisticsHelper()
 es.simyo.encogetufactura.plan.ESSimyo:
@@ -634,15 +645,11 @@ es.simyo.encogetufactura.plan.ESSimyo:
     private static final double INTERNATIONAL_PRICE_PER_SECOND_CU_KP_SO
     private static final double INTERNATIONAL_SMS_PRICE
     private static final double DATARXTX_KB_EXPRA_PRICE
-es.simyo.encogetufactura.plan.ESSimyo0y5centimos:
-    52:52:public java.lang.String getPlanURL()
-es.simyo.encogetufactura.plan.ESSimyo0y8centimos
-es.simyo.encogetufactura.plan.ESSimyo2centimos:
-    51:51:public java.lang.String getPlanURL()
-es.simyo.encogetufactura.plan.ESSimyo5centimos:
-    51:51:public java.lang.String getPlanURL()
-es.simyo.encogetufactura.plan.ESSimyoPura:
-    50:50:public java.lang.String getPlanURL()
+    134:134:public com.conzebit.myplan.core.plan.PlanChargeable processDataRxTx(com.conzebit.myplan.core.datarxtx.DataRxTx,int,boolean)
+    138:151:protected com.conzebit.myplan.core.plan.PlanChargeable processDataRxTx(com.conzebit.myplan.core.datarxtx.DataRxTx,int,boolean,double)
+es.simyo.encogetufactura.plan.ESSimyoPagaLoJusto:
+    43:43:public java.lang.String getPlanURL()
+    47:47:public int getPlanResourceID()
 es.simyo.encogetufactura.receiver.NetworkReceiver:
     private static final long SHORT_DELAY
     private static final long LONG_DELAY

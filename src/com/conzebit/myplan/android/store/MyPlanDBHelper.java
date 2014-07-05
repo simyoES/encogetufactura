@@ -158,8 +158,9 @@ public class MyPlanDBHelper extends SQLiteOpenHelper {
 	public void storeDataRxTx(long rx, long tx, String countryCode) {
 		SQLiteDatabase db = getWritableDatabase();
 		db.beginTransaction();
+		Cursor cursor = null; 
 		try {
-			Cursor cursor = db.rawQuery(GPRS_SELECT_LAST, null);
+			cursor = db.rawQuery(GPRS_SELECT_LAST, null);
 			boolean insert = true;
 			if (cursor != null && cursor.moveToNext()) {
 				Long dbRx = cursor.getLong(1);
@@ -176,6 +177,9 @@ public class MyPlanDBHelper extends SQLiteOpenHelper {
 		} catch (Exception e) {
 			Log.e(LOG_TAG, "Error storing country", e);
 		} finally {
+			if (cursor != null) {
+				cursor.close();
+			}
 			db.endTransaction();
 		}
 		db.close();

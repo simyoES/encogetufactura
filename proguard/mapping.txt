@@ -5154,29 +5154,28 @@ com.conzebit.myplan.android.store.data.SysClassNet -> com.a.a.a.a.a.g:
     long getTxBytes(java.lang.String) -> c
     java.io.RandomAccessFile getFile(java.lang.String) -> d
     long readLong(java.lang.String,java.lang.String) -> a
-com.conzebit.myplan.android.util.AndroidResourcesUtil -> com.a.a.a.b.a:
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType -> a
-    int getMsisdnTypeResourceImage(com.conzebit.myplan.core.msisdn.MsisdnType) -> a
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> a
-com.conzebit.myplan.android.util.Settings -> com.a.a.a.b.b:
+com.conzebit.myplan.android.util.Settings -> com.a.a.a.b.a:
     int getVATItem(android.content.Context,int) -> a
     int getVATItem(android.content.Context,java.lang.String) -> a
     int getVATValue(android.content.Context) -> a
     void setVATValue(android.content.Context,java.lang.String) -> b
-    java.lang.String getBillingDay(android.content.Context) -> b
-    boolean showTermsAndConditions(android.content.Context) -> c
+    java.lang.Integer getMonthlyFee(android.content.Context) -> b
+    void setMontlyFee(android.content.Context,java.lang.Integer) -> a
+    java.lang.String getBillingDay(android.content.Context) -> c
+    boolean showTermsAndConditions(android.content.Context) -> d
     void setTermsShown(android.content.Context,java.lang.String) -> c
-    java.util.HashMap getAllConfig(android.content.Context) -> d
-com.conzebit.myplan.android.util.Settings$Setting -> com.a.a.a.b.c:
+    java.util.HashMap getAllConfig(android.content.Context) -> e
+com.conzebit.myplan.android.util.Settings$Setting -> com.a.a.a.b.b:
     com.conzebit.myplan.android.util.Settings$Setting BILLINGDAY -> a
     com.conzebit.myplan.android.util.Settings$Setting TERMS_AND_CONDITIONS_SHOWN -> b
     com.conzebit.myplan.android.util.Settings$Setting COUNT_SMS -> c
     com.conzebit.myplan.android.util.Settings$Setting VAT -> d
-    com.conzebit.myplan.android.util.Settings$Setting APP_VERSION -> e
-    com.conzebit.myplan.android.util.Settings$Setting PLAN_CONFIG -> f
-    com.conzebit.myplan.android.util.Settings$Setting SHOW_PLANS_CONFIG -> g
-    java.lang.String value -> h
-    com.conzebit.myplan.android.util.Settings$Setting[] ENUM$VALUES -> i
+    com.conzebit.myplan.android.util.Settings$Setting MONTHLY_FEE -> e
+    com.conzebit.myplan.android.util.Settings$Setting APP_VERSION -> f
+    com.conzebit.myplan.android.util.Settings$Setting PLAN_CONFIG -> g
+    com.conzebit.myplan.android.util.Settings$Setting SHOW_PLANS_CONFIG -> h
+    java.lang.String value -> i
+    com.conzebit.myplan.android.util.Settings$Setting[] ENUM$VALUES -> j
     java.lang.String toString() -> toString
     com.conzebit.myplan.android.util.Settings$Setting[] values() -> values
     com.conzebit.myplan.android.util.Settings$Setting valueOf(java.lang.String) -> valueOf
@@ -5185,9 +5184,8 @@ com.conzebit.myplan.core.Chargeable -> com.a.a.b.a:
     com.conzebit.myplan.core.contact.Contact contact -> b
     java.lang.String countryWhereChargeWasMade -> c
     int getChargeableType() -> a
-    java.util.Calendar getDate() -> b
-    com.conzebit.myplan.core.contact.Contact getContact() -> c
-    java.lang.String getCountryWhereChargeWasMade() -> d
+    com.conzebit.myplan.core.contact.Contact getContact() -> b
+    java.lang.String getCountryWhereChargeWasMade() -> c
     int compareTo(com.conzebit.myplan.core.Chargeable) -> a
     java.lang.String toString() -> toString
     int compareTo(java.lang.Object) -> compareTo
@@ -5195,8 +5193,8 @@ com.conzebit.myplan.core.call.Call -> com.a.a.b.a.a:
     int type -> d
     long duration -> e
     int getChargeableType() -> a
-    int getType() -> e
-    long getDuration() -> f
+    int getType() -> d
+    long getDuration() -> e
     java.lang.String toString() -> toString
 com.conzebit.myplan.core.call.CallStat -> com.a.a.b.a.b:
     java.lang.String text -> a
@@ -5231,17 +5229,14 @@ com.conzebit.myplan.core.datarxtx.DataRxTx -> com.a.a.b.c.a:
     java.lang.Long tx -> g
     int getChargeableType() -> a
     void setCountryWhereChargeWasMade(java.lang.String) -> a
-    java.util.Date getFrom() -> e
     void setFrom(java.util.Date) -> a
-    java.util.Date getTo() -> f
     void setTo(java.util.Date) -> b
-    java.lang.Long getRx() -> g
+    java.lang.Long getRx() -> d
     void setRx(java.lang.Long) -> a
-    java.lang.Long getTx() -> h
+    java.lang.Long getTx() -> e
     void setTx(java.lang.Long) -> b
 com.conzebit.myplan.core.message.ChargeableMessage -> com.a.a.b.d.a:
     java.lang.String message -> d
-    java.lang.String getMessage() -> e
     int getChargeableType() -> a
 com.conzebit.myplan.core.msisdn.IMsisdnTypeStore -> com.a.a.b.e.a:
     com.conzebit.myplan.core.msisdn.MsisdnType getMsisdnType(java.lang.String) -> a
@@ -5277,14 +5272,12 @@ com.conzebit.myplan.core.plan.AbstractPlan -> com.a.a.b.f.a:
     java.lang.String getOperator() -> a
     java.lang.String getCurrency() -> b
     java.lang.String getPlanName() -> c
-    java.lang.String getScreenPlanName() -> d
-    int getPlanResourceID() -> e
     com.conzebit.myplan.core.plan.AbstractPlan$ProcessResult processCall(com.conzebit.myplan.core.call.Call,java.util.Map) -> a
     com.conzebit.myplan.core.plan.AbstractPlan$ProcessResult processSms(com.conzebit.myplan.core.sms.Sms,java.util.Map) -> a
     com.conzebit.myplan.core.plan.AbstractPlan$ProcessResult processBandwidth(com.conzebit.myplan.core.datarxtx.DataRxTx,java.util.Map) -> a
-    java.lang.Double getMonthFee() -> f
-    java.lang.Double getMinimumMonthFee() -> g
-    com.conzebit.myplan.core.plan.PlanConfig getPlanConfig() -> h
+    java.lang.Double getMonthFee() -> d
+    java.lang.Double getMinimumMonthFee() -> e
+    com.conzebit.myplan.core.plan.PlanConfig getPlanConfig() -> f
     com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList) -> a
 com.conzebit.myplan.core.plan.AbstractPlan$ProcessResult -> com.a.a.b.f.b:
     java.lang.Double price -> a
@@ -5295,9 +5288,7 @@ com.conzebit.myplan.core.plan.PlanChargeable -> com.a.a.b.f.c:
     java.lang.Double price -> b
     java.lang.String currency -> c
     com.conzebit.myplan.core.plan.PlanChargeable$Type type -> d
-    com.conzebit.myplan.core.Chargeable getChargeable() -> a
-    java.lang.Double getPrice() -> b
-    java.lang.String getCurrency() -> c
+    java.lang.Double getPrice() -> a
     java.lang.String toString() -> toString
 com.conzebit.myplan.core.plan.PlanChargeable$Type -> com.a.a.b.f.d:
     com.conzebit.myplan.core.plan.PlanChargeable$Type INSIDE_PLAN -> a
@@ -5316,26 +5307,15 @@ com.conzebit.myplan.core.plan.PlanConfigElement -> com.a.a.b.f.f:
     java.lang.Object value -> b
     java.lang.String getId() -> a
     void setValue(java.lang.Object) -> a
-com.conzebit.myplan.core.plan.PlanImpl -> com.a.a.b.f.g:
-    java.lang.String operator -> a
-    java.lang.String planName -> b
-    java.lang.String getOperator() -> a
-    java.lang.String getCurrency() -> b
-    java.lang.String getPlanName() -> c
-    java.lang.String getScreenPlanName() -> d
-    com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList) -> a
-    com.conzebit.myplan.core.plan.PlanConfig getPlanConfig() -> h
-    int getPlanResourceID() -> e
-com.conzebit.myplan.core.plan.PlanOperator -> com.a.a.b.f.h:
+com.conzebit.myplan.core.plan.PlanOperator -> com.a.a.b.f.g:
     java.lang.String name -> a
     java.util.HashMap planSummaries -> b
     java.lang.String getName() -> a
     void addPlanSummary(com.conzebit.myplan.core.plan.PlanSummary) -> a
-    com.conzebit.myplan.core.plan.PlanSummary getPlanSummary(java.lang.String) -> a
     java.util.Collection getPlanSummaryList() -> b
     int compareTo(com.conzebit.myplan.core.plan.PlanOperator) -> a
     int compareTo(java.lang.Object) -> compareTo
-com.conzebit.myplan.core.plan.PlanService -> com.a.a.b.f.i:
+com.conzebit.myplan.core.plan.PlanService -> com.a.a.b.f.h:
     java.util.ArrayList plans -> a
     java.util.ArrayList data -> b
     java.util.HashMap processedData -> c
@@ -5345,10 +5325,8 @@ com.conzebit.myplan.core.plan.PlanService -> com.a.a.b.f.i:
     void process() -> c
     java.util.ArrayList getOperators() -> b
     java.util.ArrayList getPlanSummaries(java.lang.String,java.util.Comparator) -> a
-    com.conzebit.myplan.core.plan.PlanSummary getPlanSummary(java.lang.String,java.lang.String) -> a
-    java.util.ArrayList getPlanCalls(java.lang.String,java.lang.String) -> b
     void setUserConfig(java.util.HashMap) -> a
-com.conzebit.myplan.core.plan.PlanSummary -> com.a.a.b.f.j:
+com.conzebit.myplan.core.plan.PlanSummary -> com.a.a.b.f.i:
     double total -> a
     com.conzebit.myplan.core.plan.AbstractPlan plan -> b
     java.util.ArrayList planCalls -> c
@@ -5358,26 +5336,24 @@ com.conzebit.myplan.core.plan.PlanSummary -> com.a.a.b.f.j:
     double getTotalPrice() -> c
     int compareTo(com.conzebit.myplan.core.plan.PlanSummary) -> a
     int compareTo(java.lang.Object) -> compareTo
-com.conzebit.myplan.core.plan.SpecialChargeProcessor -> com.a.a.b.f.k:
+com.conzebit.myplan.core.plan.SpecialChargeProcessor -> com.a.a.b.f.j:
     java.lang.Double process(long) -> a
 com.conzebit.myplan.core.sms.Sms -> com.a.a.b.g.a:
     int type -> d
     int getChargeableType() -> a
-    int getType() -> e
+    int getType() -> d
     java.lang.String toString() -> toString
 com.conzebit.myplan.ext.es.ESMsisdnTypeValidator -> com.a.a.c.a.a:
     java.lang.String getCountryCode() -> a
     com.conzebit.myplan.core.msisdn.MsisdnType getMsisdnType(java.lang.String,java.lang.String) -> a
 com.conzebit.myplan.ext.es.ESPlan -> com.a.a.c.a.b:
-    java.lang.String getCountryISO() -> i
+    java.lang.String getCountryISO() -> g
     java.lang.String getCurrency() -> b
-    com.conzebit.myplan.core.plan.PlanConfig getPlanConfig() -> h
-    java.lang.String getScreenPlanName() -> d
+    com.conzebit.myplan.core.plan.PlanConfig getPlanConfig() -> f
 com.conzebit.util.AndroidUtils -> com.a.b.a:
     java.lang.Boolean isTestMode(android.content.Context) -> a
     java.lang.String getTelephonyManagerCountryCode(android.telephony.TelephonyManager) -> a
     void callPhone(android.content.Context,java.lang.String) -> a
-    void openURL(android.content.Context,java.lang.String) -> b
 com.conzebit.util.Formatter -> com.a.b.b:
     java.text.SimpleDateFormat simpleDateFormatFull -> a
     java.text.SimpleDateFormat simpleDateFormat -> b
@@ -5389,8 +5365,7 @@ com.conzebit.util.Formatter -> com.a.b.b:
     java.lang.String formatFullDate(java.util.Calendar) -> a
     java.lang.String formatDuration(long) -> a
     java.lang.String formatDurationAsString(long) -> b
-    java.lang.String formatBytesToMb(double) -> a
-    java.lang.String formatDecimal(double) -> b
+    java.lang.String formatDecimal(double) -> a
 com.conzebit.util.MsisdnUtil -> com.a.b.c:
     com.google.i18n.phonenumbers.PhoneNumberUtil phoneUtil -> a
     com.google.i18n.phonenumbers.Phonenumber$PhoneNumber getPhoneNumber(java.lang.String,java.lang.String) -> a
@@ -5400,7 +5375,6 @@ com.conzebit.util.StringUtil -> com.a.b.d:
     boolean isEmpty(java.lang.String) -> a
     boolean isNotEmpty(java.lang.String) -> b
     boolean isBlank(java.lang.String) -> c
-    boolean isNotBlank(java.lang.String) -> d
 com.conzebit.util.ToStringBuilder -> com.a.b.e:
     java.lang.StringBuilder stringBuilder -> a
     boolean firstField -> b
@@ -5730,70 +5704,11 @@ es.simyo.encogetufactura.EncogeTuFacturaApp -> es.simyo.encogetufactura.EncogeTu
 es.simyo.encogetufactura.activity.AppDetailActivity -> es.simyo.encogetufactura.activity.AppDetailActivity:
     boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
     void onCreate(android.os.Bundle) -> onCreate
-es.simyo.encogetufactura.activity.PlanDetailActivity -> es.simyo.encogetufactura.activity.PlanDetailActivity:
-    java.lang.String operator -> a
-    java.lang.String planName -> b
-    int planResourceID -> c
-    boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
-    void onCreate(android.os.Bundle) -> onCreate
-    int access$0(es.simyo.encogetufactura.activity.PlanDetailActivity) -> a
-es.simyo.encogetufactura.activity.PlanDetailActivity$1 -> es.simyo.encogetufactura.activity.a:
-    es.simyo.encogetufactura.activity.PlanDetailActivity this$0 -> a
+es.simyo.encogetufactura.activity.AppDetailActivity$1 -> es.simyo.encogetufactura.activity.a:
+    es.simyo.encogetufactura.activity.AppDetailActivity this$0 -> a
     void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanDetailActivity$2 -> es.simyo.encogetufactura.activity.b:
-    es.simyo.encogetufactura.activity.PlanDetailActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanDetailActivity$3 -> es.simyo.encogetufactura.activity.c:
-    es.simyo.encogetufactura.activity.PlanDetailActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanDetailAdapter -> es.simyo.encogetufactura.activity.d:
-    boolean isEnabled(int) -> isEnabled
-    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-es.simyo.encogetufactura.activity.PlanDetailAdapter$PlanCallAdapterView -> es.simyo.encogetufactura.activity.e:
-    es.simyo.encogetufactura.activity.PlanDetailAdapter this$0 -> a
-    void addChargeableLine(java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,com.conzebit.myplan.core.plan.PlanChargeable,android.content.Context) -> a
-es.simyo.encogetufactura.activity.PlanHelper -> es.simyo.encogetufactura.activity.f:
-    void getPlanSummaryView(android.content.Context,android.widget.LinearLayout,com.conzebit.myplan.core.plan.PlanSummary,int) -> a
+es.simyo.encogetufactura.activity.PlanHelper -> es.simyo.encogetufactura.activity.b:
     java.lang.String getBillingPeriod(android.app.Activity) -> a
-es.simyo.encogetufactura.activity.PlanInfoActivity -> es.simyo.encogetufactura.activity.PlanInfoActivity:
-    boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
-    void onCreate(android.os.Bundle) -> onCreate
-es.simyo.encogetufactura.activity.PlanInfoActivity$1 -> es.simyo.encogetufactura.activity.g:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoActivity$2 -> es.simyo.encogetufactura.activity.h:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoActivity$3 -> es.simyo.encogetufactura.activity.i:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoActivity$4 -> es.simyo.encogetufactura.activity.j:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoActivity$5 -> es.simyo.encogetufactura.activity.k:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoActivity$6 -> es.simyo.encogetufactura.activity.l:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoActivity$7 -> es.simyo.encogetufactura.activity.m:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoActivity$8 -> es.simyo.encogetufactura.activity.n:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoActivity$9 -> es.simyo.encogetufactura.activity.o:
-    es.simyo.encogetufactura.activity.PlanInfoActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoDetailActivity -> es.simyo.encogetufactura.activity.PlanInfoDetailActivity:
-    boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
-    void onCreate(android.os.Bundle) -> onCreate
-es.simyo.encogetufactura.activity.PlanInfoDetailActivity$1 -> es.simyo.encogetufactura.activity.p:
-    es.simyo.encogetufactura.activity.PlanInfoDetailActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanInfoDetailActivity$2 -> es.simyo.encogetufactura.activity.q:
-    es.simyo.encogetufactura.activity.PlanInfoDetailActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
 es.simyo.encogetufactura.activity.PlanSummaryActivity -> es.simyo.encogetufactura.activity.PlanSummaryActivity:
     boolean nextBillingPeriodEnabled -> a
     boolean showTermsAndConditions -> b
@@ -5803,34 +5718,27 @@ es.simyo.encogetufactura.activity.PlanSummaryActivity -> es.simyo.encogetufactur
     void onCreate(android.os.Bundle) -> onCreate
     void onResume() -> onResume
     void loadView() -> a
-    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
     void loadMyPlanData() -> b
     boolean access$0(es.simyo.encogetufactura.activity.PlanSummaryActivity) -> a
     void access$1(es.simyo.encogetufactura.activity.PlanSummaryActivity,boolean) -> a
     void access$2(es.simyo.encogetufactura.activity.PlanSummaryActivity) -> b
-es.simyo.encogetufactura.activity.PlanSummaryActivity$1 -> es.simyo.encogetufactura.activity.r:
+es.simyo.encogetufactura.activity.PlanSummaryActivity$1 -> es.simyo.encogetufactura.activity.c:
     es.simyo.encogetufactura.activity.PlanSummaryActivity this$0 -> a
     void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanSummaryActivity$2 -> es.simyo.encogetufactura.activity.s:
+es.simyo.encogetufactura.activity.PlanSummaryActivity$2 -> es.simyo.encogetufactura.activity.d:
     es.simyo.encogetufactura.activity.PlanSummaryActivity this$0 -> a
     void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanSummaryActivity$3 -> es.simyo.encogetufactura.activity.t:
-    es.simyo.encogetufactura.activity.PlanSummaryActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanSummaryActivity$4 -> es.simyo.encogetufactura.activity.u:
-    es.simyo.encogetufactura.activity.PlanSummaryActivity this$0 -> a
-    void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanSummaryActivity$5 -> es.simyo.encogetufactura.activity.v:
+es.simyo.encogetufactura.activity.PlanSummaryActivity$3 -> es.simyo.encogetufactura.activity.e:
     es.simyo.encogetufactura.activity.PlanSummaryActivity this$0 -> a
     es.simyo.encogetufactura.EncogeTuFacturaApp val$app -> b
     android.widget.ImageView val$billingPeriodNext -> c
     void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanSummaryActivity$6 -> es.simyo.encogetufactura.activity.w:
+es.simyo.encogetufactura.activity.PlanSummaryActivity$4 -> es.simyo.encogetufactura.activity.f:
     es.simyo.encogetufactura.activity.PlanSummaryActivity this$0 -> a
     es.simyo.encogetufactura.EncogeTuFacturaApp val$app -> b
     android.widget.ImageView val$billingPeriodNext -> c
     void onClick(android.view.View) -> onClick
-es.simyo.encogetufactura.activity.PlanSummaryActivity$LoadDataTask -> es.simyo.encogetufactura.activity.x:
+es.simyo.encogetufactura.activity.PlanSummaryActivity$LoadDataTask -> es.simyo.encogetufactura.activity.g:
     android.app.ProgressDialog dialog -> b
     es.simyo.encogetufactura.activity.PlanSummaryActivity this$0 -> a
     void onPreExecute() -> onPreExecute
@@ -5838,42 +5746,51 @@ es.simyo.encogetufactura.activity.PlanSummaryActivity$LoadDataTask -> es.simyo.e
     void onPostExecute(java.util.ArrayList) -> a
     void onPostExecute(java.lang.Object) -> onPostExecute
     java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-es.simyo.encogetufactura.activity.PlanSummaryActivity$LoadDataTask$1 -> es.simyo.encogetufactura.activity.y:
+es.simyo.encogetufactura.activity.PlanSummaryActivity$LoadDataTask$1 -> es.simyo.encogetufactura.activity.h:
     es.simyo.encogetufactura.activity.PlanSummaryActivity$LoadDataTask this$1 -> a
     int compare(com.conzebit.myplan.core.plan.PlanSummary,com.conzebit.myplan.core.plan.PlanSummary) -> a
     int compare(java.lang.Object,java.lang.Object) -> compare
-es.simyo.encogetufactura.activity.PlanSummaryAdapter -> es.simyo.encogetufactura.activity.z:
-    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
-es.simyo.encogetufactura.activity.PlanSummaryAdapter$PlanSummaryAdapterView -> es.simyo.encogetufactura.activity.aa:
-    es.simyo.encogetufactura.activity.PlanSummaryAdapter this$0 -> a
 es.simyo.encogetufactura.activity.SettingsActivity -> es.simyo.encogetufactura.activity.SettingsActivity:
     boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
     void onCreate(android.os.Bundle) -> onCreate
-    android.preference.PreferenceScreen createPreferenceHierarchy() -> a
-es.simyo.encogetufactura.activity.SettingsActivity$1 -> es.simyo.encogetufactura.activity.ab:
+    android.preference.PreferenceScreen createPreferenceHierarchy(boolean) -> a
+es.simyo.encogetufactura.activity.SettingsActivity$1 -> es.simyo.encogetufactura.activity.i:
+    es.simyo.encogetufactura.activity.SettingsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+es.simyo.encogetufactura.activity.SettingsActivity$2 -> es.simyo.encogetufactura.activity.j:
+    es.simyo.encogetufactura.activity.SettingsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+es.simyo.encogetufactura.activity.SettingsActivity$3 -> es.simyo.encogetufactura.activity.k:
     es.simyo.encogetufactura.activity.SettingsActivity this$0 -> a
     boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
-es.simyo.encogetufactura.activity.SettingsActivity$2 -> es.simyo.encogetufactura.activity.ac:
+es.simyo.encogetufactura.activity.SettingsActivity$4 -> es.simyo.encogetufactura.activity.l:
     es.simyo.encogetufactura.activity.SettingsActivity this$0 -> a
     android.preference.ListPreference val$vatPref -> b
     boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+es.simyo.encogetufactura.activity.SettingsActivity$5 -> es.simyo.encogetufactura.activity.m:
+    es.simyo.encogetufactura.activity.SettingsActivity this$0 -> a
+    android.preference.EditTextPreference val$monthlyFee -> b
+    boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+es.simyo.encogetufactura.activity.SettingsActivity$6 -> es.simyo.encogetufactura.activity.n:
+    es.simyo.encogetufactura.activity.SettingsActivity this$0 -> a
+    boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
 es.simyo.encogetufactura.activity.SplashActivity -> es.simyo.encogetufactura.activity.SplashActivity:
     int SPLASH_DISPLAY_LENGTH -> a
     void onCreate(android.os.Bundle) -> onCreate
     void onResume() -> onResume
-es.simyo.encogetufactura.activity.SplashActivity$1 -> es.simyo.encogetufactura.activity.ad:
+es.simyo.encogetufactura.activity.SplashActivity$1 -> es.simyo.encogetufactura.activity.o:
     es.simyo.encogetufactura.activity.SplashActivity this$0 -> a
     void run() -> run
-es.simyo.encogetufactura.activity.StatisticsAdapter -> es.simyo.encogetufactura.activity.ae:
+es.simyo.encogetufactura.activity.StatisticsAdapter -> es.simyo.encogetufactura.activity.p:
     int layoutID -> a
     android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
     int access$0(es.simyo.encogetufactura.activity.StatisticsAdapter) -> a
-es.simyo.encogetufactura.activity.StatisticsAdapter$StatisticsAdapterView -> es.simyo.encogetufactura.activity.af:
+es.simyo.encogetufactura.activity.StatisticsAdapter$StatisticsAdapterView -> es.simyo.encogetufactura.activity.q:
     es.simyo.encogetufactura.activity.StatisticsAdapter this$0 -> a
 es.simyo.encogetufactura.activity.StatisticsDetailActivity -> es.simyo.encogetufactura.activity.StatisticsDetailActivity:
     boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
     void onCreate(android.os.Bundle) -> onCreate
-es.simyo.encogetufactura.activity.StatisticsHelper -> es.simyo.encogetufactura.activity.ag:
+es.simyo.encogetufactura.activity.StatisticsHelper -> es.simyo.encogetufactura.activity.r:
     java.util.ArrayList calls -> a
     java.util.ArrayList getStatisticsData(android.app.Activity,java.util.Date,java.util.Date,int) -> a
     java.util.ArrayList getSummary(android.app.Activity) -> a
@@ -5891,68 +5808,26 @@ es.simyo.encogetufactura.plan.ESSimyo -> es.simyo.encogetufactura.a.a:
     com.conzebit.myplan.core.plan.PlanChargeable processSpecialChargeableSMS(com.conzebit.myplan.core.sms.Sms) -> a
     com.conzebit.myplan.core.plan.PlanChargeable processInternationalChargeableCall(com.conzebit.myplan.core.call.Call) -> b
     com.conzebit.myplan.core.plan.PlanChargeable processInternationalChargeableSMS(com.conzebit.myplan.core.sms.Sms) -> b
-    com.conzebit.myplan.core.plan.PlanChargeable processDataRxTx(com.conzebit.myplan.core.datarxtx.DataRxTx,int,boolean) -> a
-    com.conzebit.myplan.core.plan.PlanChargeable processDataRxTx(com.conzebit.myplan.core.datarxtx.DataRxTx,int,boolean,double) -> a
     com.conzebit.myplan.core.plan.PlanChargeable internalProcessSms(com.conzebit.myplan.core.sms.Sms,double) -> a
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> j
+    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> h
 es.simyo.encogetufactura.plan.ESSimyo$1 -> es.simyo.encogetufactura.a.b:
-es.simyo.encogetufactura.plan.ESSimyo0y5centimos -> es.simyo.encogetufactura.a.c:
-    double minimumMonthFee -> a
-    double initialPrice -> b
-    double pricePerSecond -> c
-    int maxFreeSeconds -> d
-    double smsPrice -> e
-    int dataMBIncluded -> f
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType -> g
+es.simyo.encogetufactura.plan.ESSimyoPagaLoJusto -> es.simyo.encogetufactura.a.c:
+    double smsPrice -> a
+    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType -> b
     java.lang.String getPlanName() -> c
-    int getPlanResourceID() -> e
     com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList) -> a
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> k
-es.simyo.encogetufactura.plan.ESSimyo2centimos -> es.simyo.encogetufactura.a.d:
-    double monthFee -> a
-    double initialPrice -> b
-    double pricePerSecond -> c
-    double smsPrice -> d
-    int dataMBIncluded -> e
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType -> f
-    java.lang.String getPlanName() -> c
-    int getPlanResourceID() -> e
-    com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList) -> a
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> k
-es.simyo.encogetufactura.plan.ESSimyo5centimos -> es.simyo.encogetufactura.a.e:
-    double minimumMonthFee -> a
-    double initialPrice -> b
-    double pricePerSecond -> c
-    double smsPrice -> d
-    int dataMBIncluded -> e
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType -> f
-    java.lang.String getPlanName() -> c
-    int getPlanResourceID() -> e
-    com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList) -> a
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> k
-es.simyo.encogetufactura.plan.ESSimyoPura -> es.simyo.encogetufactura.a.f:
-    double minimumMonthFee -> a
-    double initialPrice -> b
-    double pricePerSecond -> c
-    double smsPrice -> d
-    int dataMBIncluded -> e
-    double pricePerKB -> f
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType -> g
-    java.lang.String getPlanName() -> c
-    int getPlanResourceID() -> e
-    com.conzebit.myplan.core.plan.PlanSummary process(java.util.ArrayList) -> a
-    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> k
-es.simyo.encogetufactura.plan.ESSimyoSpecialChargeA -> es.simyo.encogetufactura.a.g:
+    int[] $SWITCH_TABLE$com$conzebit$myplan$core$msisdn$MsisdnType() -> i
+es.simyo.encogetufactura.plan.ESSimyoSpecialChargeA -> es.simyo.encogetufactura.a.d:
     java.lang.Double initialPrice -> a
     java.lang.Double first60seconds -> b
     java.lang.Double first180seconds -> c
     java.lang.Double additionalPricePerSecond -> d
     java.lang.Double process(long) -> a
-es.simyo.encogetufactura.plan.ESSimyoSpecialChargeB -> es.simyo.encogetufactura.a.h:
+es.simyo.encogetufactura.plan.ESSimyoSpecialChargeB -> es.simyo.encogetufactura.a.e:
     java.lang.Double initialPrice -> a
     java.lang.Double pricePerSecond -> b
     java.lang.Double process(long) -> a
-es.simyo.encogetufactura.plan.ESSimyoSpecialChargeC -> es.simyo.encogetufactura.a.i:
+es.simyo.encogetufactura.plan.ESSimyoSpecialChargeC -> es.simyo.encogetufactura.a.f:
     java.lang.Double initialPrice -> a
     java.lang.Double first19seconds -> b
     java.lang.Double additionalPricePerSecond -> c

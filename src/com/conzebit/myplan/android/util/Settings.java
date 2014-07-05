@@ -31,6 +31,7 @@ public class Settings {
 		TERMS_AND_CONDITIONS_SHOWN("terms_and_conditions_shown"),
 		COUNT_SMS("count_sms"),
 		VAT("vat"),
+		MONTHLY_FEE("monthly_fee"),
 		APP_VERSION("app_version"),
 		PLAN_CONFIG("plan.config"),
 		SHOW_PLANS_CONFIG("show.plans.config");
@@ -81,6 +82,25 @@ public class Settings {
     public static void setVATValue(Context context, String value) {
     	Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
     	editor.putString(Setting.VAT.toString(), value);
+    	editor.commit();
+    }
+    
+    public static Integer getMonthlyFee(Context context) {
+    	int ret = PreferenceManager.getDefaultSharedPreferences(context).getInt(Setting.MONTHLY_FEE.toString(), -1);
+    	if (ret == -1) {
+    		return null;
+    	} else {
+    		return ret;
+    	}
+    }
+    
+    public static void setMontlyFee(Context context, Integer value) {
+    	Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
+    	if (value != null) {
+    		editor.putInt(Setting.MONTHLY_FEE.toString(), value);
+    	} else {
+    		editor.remove(Setting.MONTHLY_FEE.toString());
+    	}
     	editor.commit();
     }
     

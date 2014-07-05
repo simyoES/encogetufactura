@@ -39,7 +39,7 @@ public class SplashActivity extends Activity {
 		new Handler().postDelayed(new Runnable() {
 			public void run() {
 				SplashActivity.this.finish();
-				SplashActivity.this.startActivity(new Intent(SplashActivity.this, PlanSummaryActivity.class));
+		       	SplashActivity.this.startActivity(new Intent(SplashActivity.this, PlanSummaryActivity.class));
 			}
 		}, SPLASH_DISPLAY_LENGTH);
 	}

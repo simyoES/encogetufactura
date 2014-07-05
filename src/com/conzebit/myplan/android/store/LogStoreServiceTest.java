@@ -40,9 +40,9 @@ public class LogStoreServiceTest {
 		ArrayList<Chargeable> calls = new ArrayList<Chargeable>();
 
 		
-		calls.add(new Call(Call.CALL_TYPE_SENT, (long) (1 * 60 + 30), ContactStore.createContact("610000000", "Alicia", msisdnTypeService), getTestDate(2012, 9, 20, 8, 0), "ES"));
-		calls.add(new Call(Call.CALL_TYPE_SENT, (long) (5 * 60 + 30), ContactStore.createContact("620000000", "Bernardo", msisdnTypeService), getTestDate(2012, 9, 20, 18, 15), "ES"));
-		calls.add(new Call(Call.CALL_TYPE_SENT, (long) (5 * 60 + 30), ContactStore.createContact("+440000000", "Charles", msisdnTypeService), getTestDate(2012, 9, 21, 12, 00), "UK"));
+		calls.add(new Call(Call.CALL_TYPE_SENT, (long) (1 * 60 + 30), ContactStore.createContact("610000000", "Alicia", msisdnTypeService), getTestDate(2014, 7, 2, 8, 0), "ES"));
+		calls.add(new Call(Call.CALL_TYPE_SENT, (long) (45 * 60 + 30), ContactStore.createContact("620000000", "Bernardo", msisdnTypeService), getTestDate(2014, 7, 2, 18, 15), "ES"));
+		calls.add(new Call(Call.CALL_TYPE_SENT, (long) (5 * 60 + 30), ContactStore.createContact("+440000000", "Charles", msisdnTypeService), getTestDate(2014, 7, 2, 12, 00), "UK"));
 		
 		//Llamadas nacionales
 		// 6xxxxxxxx/+346xxxxxxxx/00346xxxxxxxx (móvil)
@@ -244,7 +244,7 @@ public class LogStoreServiceTest {
 		MsisdnTypeService msisdnTypeService = MsisdnTypeService.getInstance();
 		ArrayList<Chargeable> sms = new ArrayList<Chargeable>();
 
-		sms.add(new Sms(Sms.SMS_TYPE_SENT, ContactStore.createContact("610000000", "David", msisdnTypeService), getTestDate(2012, 9, 22, 10, 55), "ES"));
+		sms.add(new Sms(Sms.SMS_TYPE_SENT, ContactStore.createContact("610000000", "David", msisdnTypeService), getTestDate(2014, 7, 2, 10, 55), "ES"));
 		
 //		sms.add(new Sms(Sms.SMS_TYPE_SENT, ContactStore.createContact("+34610000000", "Alice (0,09)", msisdnTypeService), getTestDate(2012, 8, 2, 8, 0), "ES"));
 //		sms.add(new Sms(Sms.SMS_TYPE_SENT, ContactStore.createContact("+34710000000", "Bob (0,09)", msisdnTypeService), getTestDate(2012, 8, 2, 8, 5), "ES"));

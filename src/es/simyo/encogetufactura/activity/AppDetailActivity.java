@@ -17,12 +17,15 @@
 package es.simyo.encogetufactura.activity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebView;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
+import com.conzebit.util.AndroidUtils;
 
+import es.simyo.encogetufactura.EncogeTuFacturaApp;
 import es.simyo.encogetufactura.R;
 
 public class AppDetailActivity extends SherlockActivity {
@@ -49,6 +52,12 @@ public class AppDetailActivity extends SherlockActivity {
         
         WebView webView = (WebView) this.findViewById(R.id.appdetail_webview);
         webView.loadData(getString(R.string.appdetail_text), "text/html", "UTF-8");
-        
+
+        this.findViewById(R.id.summary_call_button).setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				AndroidUtils.callPhone(AppDetailActivity.this, EncogeTuFacturaApp.CALL_NUMBER);
+			}
+		});
+
    }
 }
