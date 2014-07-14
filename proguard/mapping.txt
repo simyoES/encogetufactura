@@ -5159,8 +5159,8 @@ com.conzebit.myplan.android.util.Settings -> com.a.a.a.b.a:
     int getVATItem(android.content.Context,java.lang.String) -> a
     int getVATValue(android.content.Context) -> a
     void setVATValue(android.content.Context,java.lang.String) -> b
-    java.lang.Integer getMonthlyFee(android.content.Context) -> b
-    void setMontlyFee(android.content.Context,java.lang.Integer) -> a
+    java.lang.Float getMonthlyFee(android.content.Context) -> b
+    void setMontlyFee(android.content.Context,java.lang.Float) -> a
     java.lang.String getBillingDay(android.content.Context) -> c
     boolean showTermsAndConditions(android.content.Context) -> d
     void setTermsShown(android.content.Context,java.lang.String) -> c

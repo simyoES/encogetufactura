@@ -134,6 +134,13 @@ public class StatisticsHelper {
         ret.add(new CallStat(activity.getString(R.string.stats_inbound_seconds), Formatter.formatDurationAsString(totalInboundSeconds)));
         ret.add(new CallStat(activity.getString(R.string.stats_outbound_seconds), Formatter.formatDurationAsString(totalOutboundSeconds)));
         
+        if (shortestCallSeconds < 0) {
+        	shortestCallSeconds = 0;
+        }
+        if (longestCallSeconds < 0) {
+        	longestCallSeconds = 0;
+        }
+        
         ret.add(new CallStat(activity.getString(R.string.stats_shortest_call), Formatter.formatDurationAsString(shortestCallSeconds)));
         ret.add(new CallStat(activity.getString(R.string.stats_longest_call), Formatter.formatDurationAsString(longestCallSeconds)));
         ret.add(new CallStat(activity.getString(R.string.stats_average_call), Formatter.formatDurationAsString(averageCallSeconds)));

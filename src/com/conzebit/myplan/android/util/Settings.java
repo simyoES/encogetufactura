@@ -85,8 +85,8 @@ public class Settings {
     	editor.commit();
     }
     
-    public static Integer getMonthlyFee(Context context) {
-    	int ret = PreferenceManager.getDefaultSharedPreferences(context).getInt(Setting.MONTHLY_FEE.toString(), -1);
+    public static Float getMonthlyFee(Context context) {
+    	float ret = PreferenceManager.getDefaultSharedPreferences(context).getFloat(Setting.MONTHLY_FEE.toString(), -1);
     	if (ret == -1) {
     		return null;
     	} else {
@@ -94,10 +94,10 @@ public class Settings {
     	}
     }
     
-    public static void setMontlyFee(Context context, Integer value) {
+    public static void setMontlyFee(Context context, Float value) {
     	Editor editor = PreferenceManager.getDefaultSharedPreferences(context).edit();
     	if (value != null) {
-    		editor.putInt(Setting.MONTHLY_FEE.toString(), value);
+    		editor.putFloat(Setting.MONTHLY_FEE.toString(), value);
     	} else {
     		editor.remove(Setting.MONTHLY_FEE.toString());
     	}

@@ -29,6 +29,7 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.conzebit.myplan.android.util.Settings;
+import com.conzebit.util.Formatter;
 
 import es.simyo.encogetufactura.EncogeTuFacturaApp;
 import es.simyo.encogetufactura.R;
@@ -115,20 +116,22 @@ public class SettingsActivity extends SherlockPreferenceActivity {
         
         final EditTextPreference monthlyFee = new EditTextPreference(this);
         monthlyFee.setTitle(R.string.settings_monthly_fee);
-        Integer monthlyFeeValue = Settings.getMonthlyFee(this);
+        Float monthlyFeeValue = Settings.getMonthlyFee(this);
         if (monthlyFeeValue != null) {
-        	monthlyFee.setSummary(String.valueOf(monthlyFeeValue));
+        	monthlyFee.setSummary(Formatter.formatDecimal(monthlyFeeValue));
         }
        	monthlyFee.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 		  	public boolean onPreferenceChange(Preference preference, Object newValue) {
-		  		Integer value = null;
+		  		Float value = null;
 		  		try {
-		  			value = Integer.valueOf(newValue.toString());
+		  			String newValueString = newValue.toString();
+		  			newValueString = newValueString.replace(',', '.');
+		  			value = Float.valueOf(newValueString);
 		  		} catch (Exception e) {
 		  		}
 		  		Settings.setMontlyFee(SettingsActivity.this, value);
 		        if (value != null) {
-		        	monthlyFee.setSummary(String.valueOf(value));
+		        	monthlyFee.setSummary(Formatter.formatDecimal(value));
 		        } else {
 		        	monthlyFee.setSummary("");
 		        }

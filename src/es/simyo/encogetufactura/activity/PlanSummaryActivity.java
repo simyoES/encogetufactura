@@ -222,21 +222,36 @@ public class PlanSummaryActivity extends SherlockActivity {
 			Integer mb = chargeableList.get(1).getPrice().intValue();
 			Double price = chargeableList.get(2).getPrice();
 	        double vat = 1 + (((double) Settings.getVATValue(PlanSummaryActivity.this)) / 100);
-	        Integer monthlyFee = Settings.getMonthlyFee(PlanSummaryActivity.this);
+	        Float monthlyFee = Settings.getMonthlyFee(PlanSummaryActivity.this);
 
 			StringBuilder content = new StringBuilder();
 
 			content.append("<html><body><p align=\"center\"><b>");
-			content.append("Crea <span style=\"color:#ff5900\">tu Tarifa").append("<br/><br/>");
-			content.append(minutes).append("MIN + ").append(mb >= 1024?(mb/1024) + "GB":mb + "MB").append("<br/><br/>");
+			if (minutes > 0 || mb > 0) {
+				content.append("Crea <span style=\"color:#ff5900\">tu Tarifa").append("<br/><br/>");
+			} else {
+				content.append("Si hablas 0, pagas <span style=\"color:#ff5900\">0€").append("<br/><br/>");
+			}
+			if (minutes > 0) {
+				content.append(minutes).append("MIN");
+				if (mb > 0) {
+					content.append(" + ");
+					content.append(mb >= 1024?(mb/1024) + "GB":mb + "MB");
+				}
+			} else {
+				if (mb > 0) {
+					content.append(mb >= 1024?(mb/1024) + "GB":mb + "MB");
+				}
+			}
+			content.append("<br/><br/>");
 			content.append("por<br/><br/>");
 			content.append("</span><span align=\"center\" style=\"color:#ff5900;font-size:250%\">").append(Formatter.formatDecimal(price * vat)).append("</span><span style=\"color:#ff5900\">&euro;/mes</span>").append("<br/>");
-			content.append("</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"font-size:40%\">(").append(PlanSummaryActivity.this.getString(R.string.settings_vat_vat)).append(")</span>").append("<br/><br/>");
+			content.append("</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"font-size:40%\">(Cuotas y consumos IVA incluidos)</span>").append("<br/><br/>");
 			if (monthlyFee != null && (minutes > 0 || mb > 0)) {
-				int savings = (int) ((monthlyFee.doubleValue() - (price * vat)) * 12);
+				float savings = (float) ((monthlyFee.floatValue() - (price * vat)) * 12);
 				if (savings > 0) {
 					content.append("<b>¡Ah&oacute;rrate unos").append("<br/>");
-					content.append("<span style=\"color:#ff5900\">").append(savings).append("&euro; al a&ntilde;o!</span></b>");
+					content.append("<span style=\"color:#ff5900\">").append(Formatter.formatDecimal(savings)).append("&euro; al a&ntilde;o!</span></b>");
 				}
 			}
 			content.append("</p></body></html>");
