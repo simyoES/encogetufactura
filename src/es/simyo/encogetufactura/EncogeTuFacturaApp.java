@@ -35,7 +35,7 @@ public class EncogeTuFacturaApp extends Application {
 	private Date endBillingDate = null;
 	
 	public static final String DEFAULT_COUNTRY = "ES";
-	public static final String CALL_NUMBER = "1645";
+	public static final String CALL_NUMBER = "1644";
 
 	@Override
     public void onCreate() {

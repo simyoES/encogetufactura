@@ -181,6 +181,12 @@ public class StatisticsHelper {
         	if (StringUtil.isBlank(contactName)) {
         		contactName = cv.getContact().getMsisdn();
         	}
+        	try {
+        		if (Integer.parseInt(contactName) < 0) {
+        			contactName = "Privado";
+        		}
+        	} catch (Exception e) {
+        	}
         	ret.add(new CallStat(contactName, Formatter.formatDurationAsString(cv.getValue())));
         	i++;
         	if (i > 20) {
@@ -223,6 +229,12 @@ public class StatisticsHelper {
         	String contactName = cv.getContact().getContactName();
         	if (StringUtil.isBlank(contactName)) {
         		contactName = cv.getContact().getMsisdn();
+        	}
+        	try {
+        		if (Integer.parseInt(contactName) < 0) {
+        			contactName = "Privado";
+        		}
+        	} catch (Exception e) {
         	}
         	ret.add(new CallStat(contactName, String.valueOf(cv.getValue())));
         	i++;
